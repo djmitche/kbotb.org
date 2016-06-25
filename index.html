@@ -7,8 +7,28 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
   <style>
 body {
-    background-image: url("paper.png")
+  background-image: url("paper.png");
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
 }
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
   </style>
   </head>
   <body>
@@ -44,6 +64,15 @@ body {
                 <a href="entry_details.html">More Details</a>
             </div>
         </div>
+        <footer class="footer">
+            <div class="container">
+                <p class="text-muted"><center>Find this and other contests at
+                    <a href="http://homebrewcompetitions.com">HomeBrewCompetitions.com</a>
+                    or
+                    <a href="http://www.bjcp.org/apps/comp_schedule/competition_schedule.php">BJCP Comp Schedule</a>.
+                </center></p>
+            </div>
+        </footer>
     </div>
   </body>
 </html>
