@@ -1,0 +1,27 @@
+{
+  "name": "kbotb.org",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:djmitche/kbotb.org.git",
+    "type": "git"
+  },
+  "config": {
+    "preset": "preset"
+  },
+  "scripts": {
+    "start": "PORT=3000 neutrino start",
+    "test": "neutrino test",
+    "build": "neutrino build"
+  },
+  "author": "Dustin J. Mitchell <dustin@cs.uchicago.edu>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.16.0",
+    "bootstrap": "^3.3.7",
+    "neutrino": "^3.0.0",
+    "neutrino-preset-react": "^2.0.1",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  }
+}
