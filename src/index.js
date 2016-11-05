@@ -21,9 +21,8 @@ const App = () => (
     </Route>
   </Router>
 );
-// TODO: role constants
-// TODO: contest id constant
-// TODO: sponsor list
-// TODO: fix footer
+// TODO: role component
+// TODO: contest id constant, registration widgets
+// TODO: sponsor list as data
 
 ReactDOM.render(<App />, document.getElementById('root'));
