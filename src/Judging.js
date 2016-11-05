@@ -1,20 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import 'bootstrap/dist/css/bootstrap.css';
+import { Link } from 'react-router';
 
-const App = () => (
+const Judging = () => (
   <div className="container-fluid">
-    <div className="row">
-      <div className="hidden-xs hidden-sm col-md-3">
-        <img src="img/kbotb-400.png" width="240" />
-      </div>
-      <div className="col-xs-12 col-md-9">
-        <h3>The Saratoga Thoroughbrews and Albany Brew Crafters present</h3>
-        <h2>The 20th Annual</h2>
-        <h1>Knickerbocker Battle of the Brews</h1>
-      </div>
-    </div>
     <div className="row">
       <div className="col-xs-3"></div>
       <div className="col-xs-6 alert alert-info text-center">
@@ -85,12 +73,11 @@ const App = () => (
 
         <p>Judges and stewards are invited to stay for the awards ceremony and
         participate in the raffle.  The Knickerbocker's raffle prizes are
-        generously supplied by our <a href="sponsors.html">sponsors</a>.</p>
+        generously supplied by our <Link to="/sponsors">sponsors</Link>.</p>
 
       </div>
     </div>
   </div>
 );
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
+export default Judging;

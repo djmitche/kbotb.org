@@ -1,20 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import 'bootstrap/dist/css/bootstrap.css';
+import { Link } from 'react-router';
 
-const App = () => (
+const Entries = () => (
   <div className="container-fluid">
-    <div className="row">
-      <div className="hidden-xs hidden-sm col-md-3">
-        <img src="img/kbotb-400.png" width="240" />
-      </div>
-      <div className="col-xs-12 col-md-9">
-        <h3>The Saratoga Thoroughbrews and Albany Brew Crafters present</h3>
-        <h2>The 20th Annual</h2>
-        <h1>Knickerbocker Battle of the Brews</h1>
-      </div>
-    </div>
     <div className="row">
       <div className="col-xs-3"></div>
       <div className="col-xs-6 alert alert-info text-center">
@@ -23,7 +11,7 @@ const App = () => (
         <br/>
         <em>Note:</em> Entry registration opens August 1, 2016
         <br/>
-        <small>Trouble using Reggie?  Click <a href="reggie-instructions.html">here</a> or email the <a href="email:djmitche@gmail.com">contest organizer</a>.</small>
+        <small>Trouble using Reggie?  Click <Link to="/reggie">here</Link> or email the <a href="email:djmitche@gmail.com">contest organizer</a>.</small>
       </div>
       <div className="col-xs-3"></div>
     </div>
@@ -287,4 +275,4 @@ const App = () => (
   </div>
 );
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export default Entries;

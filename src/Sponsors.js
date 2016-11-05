@@ -1,19 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import 'bootstrap/dist/css/bootstrap.css';
 
-const App = () => (
+const Sponsors = () => (
   <div className="container-fluid">
-    <div className="row">
-      <div className="hidden-xs hidden-sm col-md-3">
-        <img src="img/kbotb-400.png" width="240"/>
-      </div>
-      <div className="col-xs-12 col-md-9">
-        <h2>Knickerbocker Battle of the Brews</h2>
-        <h1>Sponsors</h1>
-      </div>
-    </div>
     <div className="row">
       <div className="col-xs-12">
         <h2>Thank you to our sponsors!</h2>
@@ -86,5 +74,4 @@ const App = () => (
   </div>
 );
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
+export default Sponsors;
