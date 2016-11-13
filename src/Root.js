@@ -15,8 +15,23 @@ export const RootHeader = () => (
   </div>
 );
 
+const resultsUrl = 'http://www.reggiebeer.com/?Web=1000173';
+
+const ResultsRow = () => (
+  <div className="row">
+    <div className="col-sm-1 col-xs-hidden" />
+    <div className="col-sm-10 col-xs-12" style={{ textAlign: 'center' }}>
+      <h3>Contest Results</h3>
+      Contest medal results are <a href={resultsUrl}>now available</a>!<br />
+      Scoresheets are being scanned and will be available online soon.
+    </div>
+    <div className="col-sm-1 col-xs-hidden" />
+  </div>
+);
+
 export const Root = () => (
   <div>
+    {resultsUrl && <ResultsRow />}
     <div className="row">
       <div className="col-md-1 col-xs-hidden"></div>
       <div className="col-md-4 col-xs-12">

@@ -24,5 +24,6 @@ const App = () => (
 // TODO: role component
 // TODO: contest id constant, registration widgets
 // TODO: sponsor list as data
+// TODO: "phases 'of the contest
 
 ReactDOM.render(<App />, document.getElementById('root'));
