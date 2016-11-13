@@ -15,9 +15,9 @@ const App = () => (
     <Route path="/" component={Container}>
       <IndexRoute components={{ header: RootHeader, body: Root }} />
       <Route path="entry-details" components={{ body: Entries }} />
-      <Route path="sponsors" component={{ body: Sponsors }} />
-      <Route path="judging-details" component={{ body: Judging }} />
-      <Route path="reggie" component={{ body: Reggie }} />
+      <Route path="sponsors" components={{ body: Sponsors }} />
+      <Route path="judging-details" components={{ body: Judging }} />
+      <Route path="reggie" components={{ body: Reggie }} />
     </Route>
   </Router>
 );
