@@ -22,8 +22,7 @@ const ResultsRow = () => (
     <div className="col-sm-1 col-xs-hidden" />
     <div className="col-sm-10 col-xs-12" style={{ textAlign: 'center' }}>
       <h3>Contest Results</h3>
-      Contest medal results are <a href={resultsUrl}>now available</a>!<br />
-      Scoresheets are being scanned and will be available online soon.
+      Contest medal results are <a href={resultsUrl}>now available</a>!
     </div>
     <div className="col-sm-1 col-xs-hidden" />
   </div>
