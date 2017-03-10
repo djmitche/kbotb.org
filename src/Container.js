@@ -9,7 +9,7 @@ const Header = () => (
       </Link>
     </div>
     <div className="col-xs-12 col-md-9 text-center">
-      <h2>The 20th Annual</h2>
+      <h2>The 21st Annual</h2>
       <h1>Knickerbocker Battle of the Brews</h1>
     </div>
   </div>

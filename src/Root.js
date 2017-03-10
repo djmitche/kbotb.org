@@ -6,7 +6,7 @@ export const RootHeader = () => (
     <div className="hidden-xs hidden-sm col-md-3 text-center"><img src="img/abc_logo.png" /></div>
     <div className="col-xs-12 col-sm-12 col-md-6 text-center">
       <h3>The Saratoga Thoroughbrews and Albany Brew Crafters present</h3>
-      <h2>The 20th Annual</h2>
+      <h2>The 21st Annual</h2>
       <center>
         <img src="img/kbotb-400.png" className="img-responsive" />
       </center>
@@ -15,7 +15,7 @@ export const RootHeader = () => (
   </div>
 );
 
-const resultsUrl = 'http://www.reggiebeer.com/?Web=1000173';
+const resultsUrl = null; // = 'http://www.reggiebeer.com/?Web=1000173';
 
 const ResultsRow = () => (
   <div className="row">
@@ -35,10 +35,9 @@ export const Root = () => (
       <div className="col-md-1 col-xs-hidden"></div>
       <div className="col-md-4 col-xs-12">
         <h3>Judging</h3>
-        <em>November 12, 2016</em><br />
-        The C. H. Evans Brewing company at<br />
-        The Albany Pump Station<br />
-        19 Quackenbush Square, Albany, NY 12207<br />
+        <em>October 21, 2017</em><br />
+        The Park Manor Hotel (<b>NEW</b>)<br />
+        7 Northside Dr, Clifton Park, NY 12065<br />
         <em>Prizes, raffle, camraderie!</em><br />
         <Link to="/judging-details">More Details</Link>
       </div>
@@ -53,8 +52,8 @@ export const Root = () => (
       </div>
       <div className="col-sm-4 col-xs-12">
         <h3>Entry Information</h3>
-        <em>Entry Deadline:</em> October 22, 2016<br/>
-        <em>BJCP Guidelines:</em> <b>New (2015)</b><br/>
+        <em>Entry Deadline:</em> September 29, 2017<br/>
+        <em>BJCP Guidelines:</em> 2015 BJCP<br/>
         <em>Cost:</em> $8 per entry<br/>
         <Link to="/entry-details">More Details</Link>
       </div>

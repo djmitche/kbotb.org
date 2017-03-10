@@ -7,11 +7,11 @@ const Entries = () => (
       <div className="col-xs-3"></div>
       <div className="col-xs-6 alert alert-info text-center">
         To register your entries for the Knickerbocker, use the competition site:<br/>
-        <a className="btn btn-default" href="http://reggiebeer.com/ReggieEntry.php?CompetitionID=ZEUFQP1000173">Register</a>
+        <a className="btn btn-default" href="http://reggiebeer.com/ReggieEntry.php?CompetitionID=UCXSVE1000234">Register</a>
         <br/>
-        <em>Note:</em> Entry registration opens August 1, 2016
+        <em>Note:</em> Entry registration opens August 1, 2017
         <br/>
-        <small>Trouble using Reggie?  Click <Link to="/reggie">here</Link> or email the <a href="email:djmitche@gmail.com">contest organizer</a>.</small>
+        <small>Trouble using Reggie?  Click <Link to="/reggie">here</Link> or email the <a href="email:dwboca@gmail.com">contest organizer</a>.</small>
       </div>
       <div className="col-xs-3"></div>
     </div>
@@ -19,10 +19,7 @@ const Entries = () => (
       <div className="col-xs-12">
         <h3>Competition Officials</h3>
         <ul>
-
-          <li>Organizers - <a href="email:djmitche@gmail.com">Dustin J.
-          Mitchell</a> (djmitche@gmail.com) and <a
-          href="email:shadowfax1216@gmail.com">Dan Brown</a> (shadowfax1216@gmail.com)
+          <li>Organizer - <a href="email:dwboca@gmail.com">John Lee</a> (dwboca@gmail.com).
           - for all questions</li>
 
           <li>Judge Coordinator - <a href="email:gregskegs@yahoo.com">Greg
@@ -31,23 +28,22 @@ const Entries = () => (
 
           <li>Registrar - <a href="email:djmitche@gmail.com">Dustin J.
           Mitchell</a> - for questions about entries</li>
-
         </ul>
 
         <h3>Important Dates</h3>
         <ul>
-          <li>Entry registration opens August 1, 2016.</li>
+          <li>Entry registration opens August 1, 2017.</li>
 
-          <li>Entries, registration, and payment are due October 22, 2016.
+          <li>Entries, registration, and payment are due September 29, 2017.
           Drop-offs must be delivered before the location closes, and shipped
           entries must <em>arrive</em> by the 22nd. <em>We are no longer
           accepting entries hand-carried to the contest in November</em>.</li>
 
           <li>We will make every effort to track down missing entries between
-          October 22 and November 5.</li>
+          October 1 and 21.</li>
 
-          <li>Judging will take place November 12, 2016 at Albany Pump Station,
-          19 Quackenbush Square, Albany NY.</li>
+          <li>Judging will take place October 21, 2017 at the Park Manor Hotel,
+          7 Northside Dr, Clifton Park, NY 12065</li>
 
         </ul>
 
@@ -124,6 +120,13 @@ const Entries = () => (
         These entries might be opened and/or returned to the shipper by customs'
         officials at their discretion. It is solely the entrant's responsibility to
         follow all applicable laws and regulations.</p>
+
+        <h3>Drop-Off Locations</h3>
+
+        Drop-off and shipping locations will be announced soon.  We will have drop-off locations
+        throughout the Northeast.
+
+{/*
 
         <p>Mail your entry to</p>
 
@@ -245,7 +248,7 @@ const Entries = () => (
             </address>
           </div>
         </div>
-
+*/}
         <h3>Awards</h3>
 
         <p>The awards ceremony will take place as soon as all judging is

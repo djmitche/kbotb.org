@@ -10,11 +10,11 @@ const Judging = () => (
         To register to judge or steward in the Knickerbocker Battle of the
         Brews, use the competition site:<br/>
 
-        <a className="btn btn-default" href="http://reggiebeer.com/ReggieEntry.php?CompetitionID=ZEUFQP1000173">Register</a>
+        <a className="btn btn-default" href="http://reggiebeer.com/ReggieEntry.php?CompetitionID=UCXSVE1000234">Register</a>
         <br/>
-        <em>Note:</em> Judge registration opens August 1, 2016
+        <em>Note:</em> Judge registration opens June 1, 2017
         <br/>
-        <small>Trouble using Reggie?  Email the <a href="email:shadowfax1216@gmail.com">judge coordinator</a>.</small>
+        <small>Trouble using Reggie?  Email the <a href="email:dwboca@gmail.com">contest organizer</a>.</small>
         </div>
       <div className="col-xs-3"></div>
     </div>
@@ -22,9 +22,7 @@ const Judging = () => (
       <div className="col-xs-12">
         <h3>Competition Officials</h3>
         <ul>
-          <li>Organizers - <a href="email:djmitche@gmail.com">Dustin J.
-          Mitchell</a> (djmitche@gmail.com) and <a
-          href="email:shadowfax1216@gmail.com">Dan Brown</a> (shadowfax1216@gmail.com)
+          <li>Organizer - <a href="email:dwboca@gmail.com">John Lee</a> (dwboca@gmail.com).
           - for all questions</li>
 
           <li>Judge Coordinator - <a href="email:gregskegs@yahoo.com">Greg
@@ -54,11 +52,11 @@ const Judging = () => (
 
         <h3>Contest Timeline</h3>
 
-        <p>Judging will take place November 12, 2016, at C. H. Evans / Albany
-        Pump Station.  There will be two judging sessions -- morning and
-        afternoon -- with lunch served in betwee.  Judges may register for one
-        or both sessions, but lunch is only provided for those registered for
-        both.</p>
+        <p>Judging will take place October 21, 2017 at the Park Manor Hotel, 7
+        Northside Dr, Clifton Park, NY.  There will be two judging sessions --
+        morning and afternoon -- with lunch served in between.  Judges may
+        register for one or both sessions, but lunch is only provided for those
+        registered for both.</p>
 
         <p>Judges should plan to arrive no later than 9:00am, and aside from
         those selected for the best-of-show round, will be finished judging
