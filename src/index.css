@@ -73,9 +73,6 @@ html {
     margin: 14px;
     color: white;
     overflow: clip;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
 #sidebar p {
