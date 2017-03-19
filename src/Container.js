@@ -1,28 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router';
-
-const Header = () => (
-  <div className="row">
-    <div className="hidden-xs hidden-sm col-md-3">
-      <Link to="/">
-        <img src="img/kbotb-400.png" width="240"/>
-      </Link>
-    </div>
-    <div className="col-xs-12 col-md-9 text-center">
-      <h2>The 21st Annual</h2>
-      <h1>Knickerbocker Battle of the Brews</h1>
-    </div>
-  </div>
-);
 
 const Container = props => (
-  <div className="container-fluid">
-    {props.header ? props.header : <Header />}
-    {props.body}
-    <div className="container">
-      <p className="text-center">—</p>
-      <p className="text-muted text-center">Find this and other contests at <a href="http://homebrewcompetitions.com">HomeBrewCompetitions.com</a> or <a href="http://www.bjcp.org/apps/comp_schedule/competition_schedule.php">BJCP Comp Schedule</a>.
-      </p>
+  <div className="page">
+    <div id="primary">
+      <div id="content">
+        {props.body}
+      </div>
+      <div id="footer">
+        <p className="text-muted text-center">Find this and other contests at <a href="http://homebrewcompetitions.com">HomeBrewCompetitions.com</a> or <a href="http://www.bjcp.org/apps/comp_schedule/competition_schedule.php">BJCP Comp Schedule</a>.</p>
+      </div>
+    </div>
+    <div id="sidebar">
+      <div id="contest-info">
+        <p>Get your homebrew evaluated by BJCP certified judges</p>
+        <p>Entry deadline: September 29, 2017</p>
+        <p>Cost: $8 per entry <br />
+          <span style={{ fontSize: '70%' }}>(two 12oz bottles)</span></p>
+        <p>Prizes, raffle, and camraderie!</p>
+      </div>
+      <div id="juding-info">
+        <p>Judging:</p>
+        <p>Park Manor Hotel<br />
+          <span style={{ fontWeight: 'normal' }}>
+          7 Northside Drive<br />
+          Clifton Park, NY 12065
+          </span>
+        </p>
+      </div>
     </div>
   </div>
 );

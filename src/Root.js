@@ -1,23 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-export const RootHeader = () => (
-  <div className="row">
-    <div className="hidden-xs hidden-sm col-md-3 text-center"><img src="img/abc_logo.png" /></div>
-    <div className="col-xs-12 col-sm-12 col-md-6 text-center">
-      <h3>The Saratoga Thoroughbrews and Albany Brew Crafters present</h3>
-      <h2>The 21st Annual</h2>
-      <center>
-        <img src="img/kbotb-400.png" className="img-responsive" />
-      </center>
-    </div>
-    <div className="hidden-xs hidden-sm col-md-3 text-center"><img src="img/thoroughbrews_logo.png" /></div>
-  </div>
-);
-
 const resultsUrl = null; // = 'http://www.reggiebeer.com/?Web=1000173';
 
-const ResultsRow = () => (
+const ResultsItem = () => (
   <div className="row">
     <div className="col-sm-1 col-xs-hidden" />
     <div className="col-sm-10 col-xs-12" style={{ textAlign: 'center' }}>
@@ -29,29 +15,32 @@ const ResultsRow = () => (
 );
 
 export const Root = () => (
-  <div>
-    {resultsUrl && <ResultsRow />}
-    <div className="row">
-      <div className="col-md-1 col-xs-hidden"></div>
-      <div className="col-md-4 col-xs-12">
+  <div className="root">
+    <img className="centered-logo" src="img/kbotb-480.png" />
+    <h1>21st Annual Homebrew Contest</h1>
+    <h2>Saturday, October 21, 2017</h2>
+    <p><em>Want more bragging rights for your homebrew??</em></p>
+    <p>What if you could tell your friends that your homebrew is "Award
+    Winning"? Here is your opportunity to get your brew evaluated by
+    BJCP certified judges.  Not only might you take home a prize, but
+    all entries receive valuable written feedback from judges to help
+    you improve your homebrew.</p>
+
+    <div id="page-menu">
+      {resultsUrl && <div className="menu-item"><ResultsItem /></div>}
+      <div className="menu-item">
         <h3>Judging</h3>
         <em>October 21, 2017</em><br />
-        The Park Manor Hotel (<b>NEW</b>)<br />
-        7 Northside Dr, Clifton Park, NY 12065<br />
-        <em>Prizes, raffle, camraderie!</em><br />
+        Park Manor Hotel (<b>NEW</b>)<br />
         <Link to="/judging-details">More Details</Link>
       </div>
-      <div className="col-md-3 col-xs-12">
+      <div className="menu-item">
         <h3>Sponsors</h3>
-
-        KBOTB is generously sponsored by <Link to="/sponsors">local
-          homebrew shops and vendors</Link>.  Please give them your
-        business and say "thanks" for supporting the homebrewing
-        community!
-
+        Please thank our sponsors!<br />
+        <Link to="/sponsors">More Details</Link>
       </div>
-      <div className="col-sm-4 col-xs-12">
-        <h3>Entry Information</h3>
+      <div className="menu-item">
+        <h3>Entries</h3>
         <em>Entry Deadline:</em> September 29, 2017<br/>
         <em>BJCP Guidelines:</em> 2015 BJCP<br/>
         <em>Cost:</em> $8 per entry<br/>
