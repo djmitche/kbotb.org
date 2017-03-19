@@ -13,7 +13,7 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 const App = () => (
   <Router history={hashHistory}>
     <Route path="/" component={Container}>
-      <IndexRoute components={{ isRoot: true, body: Root }} />
+      <IndexRoute components={{ body: Root }} />
       <Route path="entry-details" components={{ body: Entries }} />
       <Route path="sponsors" components={{ body: Sponsors }} />
       <Route path="judging-details" components={{ body: Judging }} />

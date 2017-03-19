@@ -6,7 +6,7 @@ import { entryCost, entryDueDate, locationName, locationAddress } from './consta
 const Container = props => (
   <div className="page">
     <div id="primary">
-      {!props.isRoot && <h1><Link className="home-link" to="/">Knickerbocker Battle of the Brews</Link></h1>}
+      {props.location.pathname !== '/' && <h1><Link className="home-link" to="/">Knickerbocker Battle of the Brews</Link></h1>}
       <div id="content">
         {props.body}
       </div>
