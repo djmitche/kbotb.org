@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { resultsUrl, entryCost, entryDueDate, contestDate } from './constants';
+import { resultsUrl, entryCost, entryDueDate, contestDate, locationName } from './constants';
 
 export const Root = () => (
   <div className="root">
@@ -22,7 +22,7 @@ export const Root = () => (
       <div className="menu-item">
         <h3>Judging</h3>
         <em>{contestDate.format('dddd, MMMM Do, YYYY')}</em><br />
-        Park Manor Hotel (<b>NEW</b>)<br />
+        {locationName} (<b>NEW</b>)<br />
         <Link to="/judging-details">More Details</Link>
       </div>
       <div className="menu-item">

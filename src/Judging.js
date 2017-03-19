@@ -2,7 +2,8 @@ import React from 'react';
 import moment from 'moment';
 import { Link } from 'react-router';
 import { Officials } from './Officials';
-import { judgeRegistrationStartDate, organizerEmail, contestDate } from './constants';
+import { prejudgeDate, judgeRegistrationStartDate, organizerEmail, contestDate,
+  locationName, locationAddress, judgeInstructions, stewardInstructions } from './constants';
 
 const Judging = () => (
   <div className="container-fluid">
@@ -14,7 +15,8 @@ const Judging = () => (
         </div>
       ) : (
         <div className="col-xs-6 alert alert-info text-center">
-          To register to judge or steward in the Knickerbocker Battle of the Brews, use the competition site:<br/>
+          To register to judge or steward in the Knickerbocker Battle of the
+          Brews, use the competition site:<br/>
           <a className="btn btn-default" href="http://reggiebeer.com/ReggieEntry.php?CompetitionID=UCXSVE1000234">Register</a><br/>
           <small>Trouble using Reggie?  Click <Link to="/reggie">here</Link> or email the <a href={`email:${organizerEmail}`}>contest organizer</a>.</small>
         </div>
@@ -44,22 +46,23 @@ const Judging = () => (
 
         <h3>Contest Timeline</h3>
 
-        <p>Judging will take place {contestDate.format('dddd, MMMM Do, YYYY')} at the Park Manor Hotel, 7
-        Northside Dr, Clifton Park, NY.  There will be two judging sessions --
-        morning and afternoon -- with lunch served in between.  Judges may
-        register for one or both sessions, but lunch is only provided for those
-        registered for both.</p>
+        <p>Judging will take place {contestDate.format('dddd, MMMM Do, YYYY')}
+        at the {locationName}, {locationAddress}.{' '}
+        {prejudgeDate ?
+          <span>There will be three judging sessions -- a small pre-judging
+          on {prejudgeDate.format('dddd')} evening, followed by morning and
+          afternoon sessions on {contestDate.format('dddd')}, with lunch served
+          in between.</span>
+        :
+          <span>There will be two judging sessions in the morning and afternoon
+          on {contestDate.format('dddd')}, with lunch served in between.</span>
+        }{' '}
+        Note that lunch is only provided for those registered for both sessions
+        on {contestDate.format('dddd')}.</p>
 
-        <p>Judges should plan to arrive no later than 9:00am, and aside from
-        those selected for the best-of-show round, will be finished judging
-        around 3:00.  You are, of course, encouraged to stay around for the
-        raffle and announcement of the winners.  Remember that we depend on our
-        judges to run a great contest!  If for any reason you cannot make it to
-        the contest or may arrive late, please contact the judge coordinator
-        immediately so that he can make the proper arrangements.</p>
+        {judgeInstructions}
 
-        <p>Stewards should plan to arrive at 8:30am to help set up the space,
-        and to stay until 5:00 to help clean up.</p>
+        {stewardInstructions}
 
         <p>Judges and stewards are invited to stay for the awards ceremony and
         participate in the raffle.  The Knickerbocker's raffle prizes are

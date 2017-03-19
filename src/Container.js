@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router';
 import moment from 'moment';
-import { entryCost, entryDueDate } from './constants';
+import { entryCost, entryDueDate, locationName, locationAddress } from './constants';
 
 const Container = props => (
   <div className="page">
     <div id="primary">
+      {!props.isRoot && <h1><Link className="home-link" to="/">Knickerbocker Battle of the Brews</Link></h1>}
       <div id="content">
         {props.body}
       </div>
@@ -22,11 +24,8 @@ const Container = props => (
       </div>
       <div id="juding-info">
         <p>Judging:</p>
-        <p>Park Manor Hotel<br />
-          <span style={{ fontWeight: 'normal' }}>
-          7 Northside Drive<br />
-          Clifton Park, NY 12065
-          </span>
+        <p>{locationName}<br />
+          <span style={{ fontWeight: 'normal' }}>{locationAddress}</span>
         </p>
       </div>
     </div>

@@ -2,7 +2,8 @@ import React from 'react';
 import moment from 'moment';
 import { Link } from 'react-router';
 import { Officials } from './Officials';
-import { entryCost, entryDueDate, prejudgeDate, contestDate, registrationStartDate, organizerEmail } from './constants';
+import { entryCost, entryDueDate, prejudgeDate, contestDate, registrationStartDate, organizerEmail,
+  locationName, locationAddress, dropoffStartDate } from './constants';
 
 const Entries = () => (
   <div className="container-fluid">
@@ -29,6 +30,8 @@ const Entries = () => (
         <ul>
           <li>Entry registration opens {registrationStartDate.format('MMMM Do, YYYY')}.</li>
 
+          <li>Entries must be dropped off, or arrive, after {dropoffStartDate.format('MMMM Do, YYYY')}.</li>
+
           <li>Entries, registration, and payment are due {entryDueDate.format('MMMM Do, YYYY')}.
           Drop-offs must be delivered before the location closes, and shipped
           entries must <em>arrive</em> by the {entryDueDate.format('Do')}. <em>We can no longer
@@ -37,10 +40,9 @@ const Entries = () => (
           <li>We will make every effort to track down missing entries between
           the entry deadline and the judging esssions.</li>
 
-          <li>Judging will take place {contestDate.format('dddd, MMMM Do, YYYY')} at the Park Manor Hotel,
-          7 Northside Dr, Clifton Park, NY 12065</li>
-
-          {prejudgeDate && <li>A smaller pre-judging session will take place {prejudgeDate.format('dddd, MMMM Do')}.</li>}
+          <li>Judging will take place {contestDate.format('dddd, MMMM Do, YYYY')} at the {locationName}, {locationAddress}.{' '}
+          {prejudgeDate && <span>A smaller pre-judging session will take place {prejudgeDate.format('dddd, MMMM Do')}.</span>}
+          </li>
 
         </ul>
 
