@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router';
-import { resultsUrl } from 'constants';
+import { resultsUrl, entryCost, entryDueDate, contestDate } from './constants';
 
 export const Root = () => (
   <div className="root">
     <img className="centered-logo" src="img/kbotb-480.png" />
     <h1>21st Annual Homebrew Contest</h1>
-    <h2>Saturday, October 21, 2017</h2>
+    <h2>{contestDate.format('dddd, MMMM Do, YYYY')}</h2>
     <p><em>Want more bragging rights for your homebrew??</em></p>
     <p>What if you could tell your friends that your homebrew is "Award
     Winning"? Here is your opportunity to get your brew evaluated by
@@ -21,7 +21,7 @@ export const Root = () => (
       </div>}
       <div className="menu-item">
         <h3>Judging</h3>
-        <em>October 21, 2017</em><br />
+        <em>{contestDate.format('dddd, MMMM Do, YYYY')}</em><br />
         Park Manor Hotel (<b>NEW</b>)<br />
         <Link to="/judging-details">More Details</Link>
       </div>
@@ -32,9 +32,9 @@ export const Root = () => (
       </div>
       <div className="menu-item">
         <h3>Entries</h3>
-        <em>Entry Deadline:</em> September 29, 2017<br/>
+        <em>Entry Deadline:</em> {entryDueDate.format('MMMM Do, YYYY')}<br/>
         <em>BJCP Guidelines:</em> 2015 BJCP<br/>
-        <em>Cost:</em> $8 per entry<br/>
+        <em>Cost:</em> {entryCost} per entry<br/>
         <Link to="/entry-details">More Details</Link>
       </div>
     </div>

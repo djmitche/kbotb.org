@@ -1,55 +1,52 @@
 import React from 'react';
+import moment from 'moment';
 import { Link } from 'react-router';
+import { Officials } from './Officials';
+import { entryCost, entryDueDate, prejudgeDate, contestDate, registrationStartDate, organizerEmail } from './constants';
 
 const Entries = () => (
   <div className="container-fluid">
     <div className="row">
       <div className="col-xs-3"></div>
-      <div className="col-xs-6 alert alert-info text-center">
-        To register your entries for the Knickerbocker, use the competition site:<br/>
-        <a className="btn btn-default" href="http://reggiebeer.com/ReggieEntry.php?CompetitionID=UCXSVE1000234">Register</a>
-        <br/>
-        <em>Note:</em> Entry registration opens August 1, 2017
-        <br/>
-        <small>Trouble using Reggie?  Click <Link to="/reggie">here</Link> or email the <a href="email:dwboca@gmail.com">contest organizer</a>.</small>
-      </div>
+      {moment().isBefore(registrationStartDate) ? (
+        <div className="col-xs-6 alert alert-info text-center">
+          <em>Note:</em> Entry registration opens {registrationStartDate.format('MMMM Do, YYYY')}.
+        </div>
+      ) : (
+        <div className="col-xs-6 alert alert-info text-center">
+          To register your entries for the Knickerbocker, use the competition site:<br/>
+          <a className="btn btn-default" href="http://reggiebeer.com/ReggieEntry.php?CompetitionID=UCXSVE1000234">Register</a><br/>
+          <small>Trouble using Reggie?  Click <Link to="/reggie">here</Link> or email the <a href={`email:${organizerEmail}`}>contest organizer</a>.</small>
+        </div>
+      )}
       <div className="col-xs-3"></div>
     </div>
     <div className="row">
       <div className="col-xs-12">
-        <h3>Competition Officials</h3>
-        <ul>
-          <li>Organizer - <a href="email:dwboca@gmail.com">John Lee</a> (dwboca@gmail.com).
-          - for all questions</li>
-
-          <li>Judge Coordinator - <a href="email:gregskegs@yahoo.com">Greg
-          Mobley</a> (gregskegs@yahoo.com) - for questions about judging or
-          stewarding</li>
-
-          <li>Registrar - <a href="email:djmitche@gmail.com">Dustin J.
-          Mitchell</a> - for questions about entries</li>
-        </ul>
+        <Officials />
 
         <h3>Important Dates</h3>
         <ul>
-          <li>Entry registration opens August 1, 2017.</li>
+          <li>Entry registration opens {registrationStartDate.format('MMMM Do, YYYY')}.</li>
 
-          <li>Entries, registration, and payment are due September 29, 2017.
+          <li>Entries, registration, and payment are due {entryDueDate.format('MMMM Do, YYYY')}.
           Drop-offs must be delivered before the location closes, and shipped
-          entries must <em>arrive</em> by the 22nd. <em>We are no longer
-          accepting entries hand-carried to the contest in November</em>.</li>
+          entries must <em>arrive</em> by the {entryDueDate.format('Do')}. <em>We can no longer
+          accept entries hand-carried to the judging sessions.</em>.</li>
 
           <li>We will make every effort to track down missing entries between
-          October 1 and 21.</li>
+          the entry deadline and the judging esssions.</li>
 
-          <li>Judging will take place October 21, 2017 at the Park Manor Hotel,
+          <li>Judging will take place {contestDate.format('dddd, MMMM Do, YYYY')} at the Park Manor Hotel,
           7 Northside Dr, Clifton Park, NY 12065</li>
+
+          {prejudgeDate && <li>A smaller pre-judging session will take place {prejudgeDate.format('dddd, MMMM Do')}.</li>}
 
         </ul>
 
         <h3>Entry Fees</h3>
 
-        <p>Each entry is $8.00.  Payment can be made via Paypal (preferred)
+        <p>Each entry is {entryCost}.  Payment can be made via Paypal (preferred)
         when registering the entry, or by check with the entry itself.  Checks should
         be made out to "Albany Brew Crafters".  Cash payments cannot be accepted.</p>
 

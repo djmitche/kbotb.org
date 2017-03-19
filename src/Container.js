@@ -1,4 +1,6 @@
 import React from 'react';
+import moment from 'moment';
+import { entryCost, entryDueDate } from './constants';
 
 const Container = props => (
   <div className="page">
@@ -13,8 +15,8 @@ const Container = props => (
     <div id="sidebar">
       <div id="contest-info">
         <p>Get your homebrew evaluated by BJCP certified judges</p>
-        <p>Entry deadline: September 29, 2017</p>
-        <p>Cost: $8 per entry <br />
+        <p>Entry deadline: {moment().isAfter(entryDueDate) ? <em>Entries Closed</em> : entryDueDate.format('MMMM Do, YYYY')}.</p>
+        <p>Cost: {entryCost} per entry <br />
           <span style={{ fontSize: '70%' }}>(two 12oz bottles)</span></p>
         <p>Prizes, raffle, and camraderie!</p>
       </div>

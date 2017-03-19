@@ -1,37 +1,29 @@
 import React from 'react';
+import moment from 'moment';
 import { Link } from 'react-router';
+import { Officials } from './Officials';
+import { judgeRegistrationStartDate, organizerEmail, contestDate } from './constants';
 
 const Judging = () => (
   <div className="container-fluid">
     <div className="row">
       <div className="col-xs-3"></div>
-      <div className="col-xs-6 alert alert-info text-center">
-
-        To register to judge or steward in the Knickerbocker Battle of the
-        Brews, use the competition site:<br/>
-
-        <a className="btn btn-default" href="http://reggiebeer.com/ReggieEntry.php?CompetitionID=UCXSVE1000234">Register</a>
-        <br/>
-        <em>Note:</em> Judge registration opens June 1, 2017
-        <br/>
-        <small>Trouble using Reggie?  Email the <a href="email:dwboca@gmail.com">contest organizer</a>.</small>
+      {moment().isBefore(judgeRegistrationStartDate) ? (
+        <div className="col-xs-6 alert alert-info text-center">
+          <em>Note:</em> Judge registration opens {judgeRegistrationStartDate.format('MMMM Do, YYYY')}.
         </div>
-      <div className="col-xs-3"></div>
+      ) : (
+        <div className="col-xs-6 alert alert-info text-center">
+          To register to judge or steward in the Knickerbocker Battle of the Brews, use the competition site:<br/>
+          <a className="btn btn-default" href="http://reggiebeer.com/ReggieEntry.php?CompetitionID=UCXSVE1000234">Register</a><br/>
+          <small>Trouble using Reggie?  Click <Link to="/reggie">here</Link> or email the <a href={`email:${organizerEmail}`}>contest organizer</a>.</small>
+        </div>
+      )}
     </div>
     <div className="row">
       <div className="col-xs-12">
-        <h3>Competition Officials</h3>
-        <ul>
-          <li>Organizer - <a href="email:dwboca@gmail.com">John Lee</a> (dwboca@gmail.com).
-          - for all questions</li>
+        <Officials />
 
-          <li>Judge Coordinator - <a href="email:gregskegs@yahoo.com">Greg
-          Mobley</a> (gregskegs@yahoo.com) - for questions about judging or
-          stewarding</li>
-
-          <li>Registrar - <a href="email:djmitche@gmail.com">Dustin J.
-          Mitchell</a> - for questions about entries</li>
-        </ul>
         <h3>Qualifications</h3>
 
         <p><b>Steward:</b> Stewards are responsible for keeping the judges
@@ -52,7 +44,7 @@ const Judging = () => (
 
         <h3>Contest Timeline</h3>
 
-        <p>Judging will take place October 21, 2017 at the Park Manor Hotel, 7
+        <p>Judging will take place {contestDate.format('dddd, MMMM Do, YYYY')} at the Park Manor Hotel, 7
         Northside Dr, Clifton Park, NY.  There will be two judging sessions --
         morning and afternoon -- with lunch served in between.  Judges may
         register for one or both sessions, but lunch is only provided for those
