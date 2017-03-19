@@ -1,18 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
-
-const resultsUrl = null; // = 'http://www.reggiebeer.com/?Web=1000173';
-
-const ResultsItem = () => (
-  <div className="row">
-    <div className="col-sm-1 col-xs-hidden" />
-    <div className="col-sm-10 col-xs-12" style={{ textAlign: 'center' }}>
-      <h3>Contest Results</h3>
-      Contest medal results are <a href={resultsUrl}>now available</a>!
-    </div>
-    <div className="col-sm-1 col-xs-hidden" />
-  </div>
-);
+import { resultsUrl } from 'constants';
 
 export const Root = () => (
   <div className="root">
@@ -27,7 +15,10 @@ export const Root = () => (
     you improve your homebrew.</p>
 
     <div id="page-menu">
-      {resultsUrl && <div className="menu-item"><ResultsItem /></div>}
+      {resultsUrl && <div className="menu-item">
+        <h3>Results</h3>
+        Contest medal results are <a href={resultsUrl}>now available!</a>!
+      </div>}
       <div className="menu-item">
         <h3>Judging</h3>
         <em>October 21, 2017</em><br />
