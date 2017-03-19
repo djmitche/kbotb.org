@@ -84,7 +84,7 @@ const Entries = () => (
         specific information required. Failure to supply required information
         such as Classic Style, Special Ingredients, or Carbonation Level (mead,
         cider) will negatively impact the scoring of your entry. For any
-        questions about the entry form, the style guidelines, classNameifying
+        questions about the entry form, the style guidelines, classifying
         an entry, or supplying additional information, please contact the
         Competition Registrar.</p>
 
