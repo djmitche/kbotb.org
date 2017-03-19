@@ -3,7 +3,17 @@ import moment from 'moment';
 import { Link } from 'react-router';
 import { Officials } from './Officials';
 import { entryCost, entryDueDate, prejudgeDate, contestDate, registrationStartDate, organizerEmail,
-  locationName, locationAddress, dropoffStartDate, registrationUrl } from './constants';
+  locationName, locationAddress, dropoffStartDate, registrationUrl, mailingAddresses, dropOffs } from './constants';
+
+const Location = props => (
+  <div className="location" key={location.name}>
+    {props.location.url ?
+      <b><a href={props.location.url}>{props.location.name}</a></b> :
+      <b>{props.location.name}</b>}
+    {props.location.address}
+    {props.location.phone}
+  </div>
+);
 
 const Entries = () => (
   <div className="container-fluid">
@@ -120,26 +130,13 @@ const Entries = () => (
         officials at their discretion. It is solely the entrant's responsibility to
         follow all applicable laws and regulations.</p>
 
-        <h3>Drop-Off Locations</h3>
-
-        Drop-off and shipping locations will be announced soon.  We will have drop-off locations
-        throughout the Northeast.
-
-{/*
+        <h3>Mail-in Locations</h3>
 
         <p>Mail your entry to</p>
 
-        <address>
-          The C. H. Evans Brewing company at<br/>
-          The Albany Pump Station<br/>
-          19 Quackenbush Square, Albany, NY 12207
-        </address>
-
-        <p>or drop it off at one of the locations below.</p>
-
-        <p>For those who have entered and judged before, note that in the
-        interests of contest efficiency, <em>we are no longer accepting entries
-        hand-carried to the contest in November</em></p>
+        <div className="entry-locations">
+        {mailingAddresses.map(location => (<Location location={location} />))}
+        </div>
 
         <h3>Drop-Off Locations</h3>
 
@@ -149,105 +146,13 @@ const Entries = () => (
 
         <br />
 
-        <div className="container">
-          <div className="col-xs-12 col-sm-6 col-md-4">
-            <b>Barley Hops and Grapes</b><br/>
-            <address>
-              16 E Market St<br />
-              Red Hook NY 12571<br />
-              (845) 835-8256
-            </address>
-          </div>
-          <div className="col-xs-12 col-sm-6 col-md-4">
-            <b>Saratoga Zymurgist</b><br/>
-            <address>
-              112 Excelsior Ave<br />
-              Saratoga Springs, NY 12866<br />
-              (518) 580-9785
-            </address>
-          </div>
-          <div className="col-xs-12 col-sm-6 col-md-4">
-            <b>Albany Pump Station</b><br/>
-            <address>
-              19 Quackenbush Square<br />
-              Albany, NY 12207<br />
-              (518) 447-9000
-            </address>
-          </div>
-          <div className="col-xs-12 col-sm-6 col-md-4">
-            <b>Homebrew Emporium</b><br/>
-            <address>
-              470 North Greenbush Rd (Route 4)<br />
-              Rensselaer, NY 12144<br />
-              (518) 283-7094
-            </address>
-          </div>
-          <div className="col-xs-12 col-sm-6 col-md-4">
-            <b>West Boylston Homebrew Emporium</b><br/>
-            <address>
-              45 Sterling Street (Route 12)<br />
-              West Boylston, MA 01583<br />
-              (508) 835-3374
-            </address>
-          </div>
-          <div className="col-xs-12 col-sm-6 col-md-4">
-            <b>Modern Homebrew Emporium</b><br/>
-            <address>
-              2304 Massachusetts Avenue<br />
-              Cambridge, MA 02140<br />
-              (617) 498-0400
-            </address>
-          </div>
-          <div className="col-xs-12 col-sm-6 col-md-4">
-            <b>South Shore Homebrew Emporium</b><br/>
-            <address>
-              58 Randolph Street<br />
-              South Weymouth, MA 02190<br />
-              (781) 340-2739
-            </address>
-          </div>
-          <div className="col-xs-12 col-sm-6 col-md-4">
-            <b>Westchester Homebrew Emporium</b><br/>
-            <address>
-              550 North Avenue<br />
-              New Rochelle, NY 10801<br />
-              (914) 637-2337
-            </address>
-          </div>
-          <div className="col-xs-12 col-sm-6 col-md-4">
-            <b>E. J. Wren Homebrew</b><br/>
-            <address>
-              209 Oswego Street<br />
-              Liverpool, NY 13088<br />
-              (315) 457-2282
-            </address>
-          </div>
-          <div className="col-xs-12 col-sm-6 col-md-4">
-            <b>Boston Homebrew Supply</b><br/>
-            <address>
-              1378 Beacon St<br/>
-              Brookline, MA 02446<br/>
-              (617) 879-9550
-            </address>
-          </div>
-          <div className="col-xs-12 col-sm-6 col-md-4">
-            <b>Hammersmith Homebrew Supplies</b><br/>
-            <address>
-              883 New Loudon Road (Route 9)<br />
-              Latham, New York 12110<br />
-              (518) 786-1853
-            </address>
-          </div>
-          <div className="col-xs-12 col-sm-6 col-md-4">
-            <b>Bitter & Esters</b><br/>
-            <address>
-              700 Washington Ave<br />
-              Brooklyn, NY 11238<br />
-              (917) 596-7261
-            </address>
-          </div>
+        <div className="entry-locations">
+        {dropOffs.map(location => (<Location location={location} />))}
         </div>
-*/}
+
+        {moment().isBefore(registrationStartDate) &&
+          <p>Additional drop-off and shipping locations may be added before {registrationStartDate.format('MMMM Do')}.</p>}
+
         <h3>Awards</h3>
 
         <p>The awards ceremony will take place as soon as all judging is

@@ -60,6 +60,31 @@ html {
     text-align: center;
 }
 
+.entry-locations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.entry-locations .location {
+    padding: 2em;
+}
+
+.location address {
+    margin-bottom: 0;
+}
+
+.sponsor-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+img.sponsor {
+    max-width: 240px;
+}
+
 .page #primary #footer {
     flex-grow: 0;
     margin: 14px;
@@ -106,10 +131,6 @@ html {
     padding: 1em;
     margin: 14px;
     color: white;
-}
-
-img.sponsor {
-    max-width: 240px;
 }
 
 .root img {

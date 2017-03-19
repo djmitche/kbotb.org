@@ -23,6 +23,165 @@ export const dropoffStartDate = moment('2017-09-01');
 export const entryDueDate = moment('2017-09-29');
 export const entryCost = '$8';
 
+const locations = {
+  parkManor: {
+    name: 'The Park Manor Hotel',
+    url: 'http://www.theparkmanorhotel.com/',
+    logo: 'pmh.png',
+    address:
+      <address>
+       7 Northside Drive<br />
+       Clifton Park, NY 12065
+      </address>,
+  },
+  barleyHopsAndGrapes: {
+    name: 'Barley Hops and Grapes',
+    url: 'http://barleyhopsandgrapes.com/',
+    logo: 'bhg.png',
+    address:
+      <address>
+        16 E Market St<br />
+        Red Hook NY 12571<br />
+      </address>,
+    phone: '(845) 835-8256',
+  },
+  bitterAndEsters: {
+    name: 'Bitter & Esters',
+    url: 'http://bitterandesters.com/',
+    logo: 'bitterandesters.png',
+    address:
+      <address>
+        700 Washington Ave<br />
+        Brooklyn, NY 11238<br />
+      </address>,
+    phone: '(917) 596-7261',
+  },
+  saratogaZymurgist: {
+    name: 'Saratoga Zymurgist',
+    url: 'http://www.saratogaz.com/',
+    logo: 'sz.jpg',
+    address:
+      <address>
+        112 Excelsior Ave<br />
+        Saratoga Springs, NY 12866<br />
+      </address>,
+    phone: '(518) 580-9785',
+  },
+  heGreenbush: {
+    name: 'Homebrew Emporium',
+    url: 'http://beerbrew.com/',
+    logo: 'he.png',
+    address:
+      <address>
+        470 North Greenbush Rd (Route 4)<br />
+        Rensselaer, NY 12144<br />
+      </address>,
+    phone: '(518) 283-7094',
+  },
+  heBoylston: {
+    name: 'West Boylston Homebrew Emporium',
+    url: 'http://beerbrew.com/',
+    logo: 'he.png',
+    address:
+      <address>
+        45 Sterling Street (Route 12)<br />
+        West Boylston, MA 01583<br />
+      </address>,
+    phone: '(508) 835-3374',
+  },
+  heCambridge: {
+    name: 'Modern Homebrew Emporium',
+    url: 'http://beerbrew.com/',
+    logo: 'he.png',
+    address:
+      <address>
+        2304 Massachusetts Avenue<br />
+        Cambridge, MA 02140<br />
+      </address>,
+    phone: '(617) 498-0400',
+  },
+  heSouthShore: {
+    name: 'South Shore Homebrew Emporium',
+    url: 'http://beerbrew.com/',
+    logo: 'he.png',
+    address:
+      <address>
+        58 Randolph Street<br />
+        South Weymouth, MA 02190<br />
+      </address>,
+    phone: '(781) 340-2739',
+  },
+  heWestchester: {
+    name: 'Westchester Homebrew Emporium',
+    url: 'http://beerbrew.com/',
+    logo: 'he.png',
+    address:
+      <address>
+        550 North Avenue<br />
+        New Rochelle, NY 10801<br />
+      </address>,
+    phone: '(914) 637-2337',
+  },
+  ejWren: {
+    name: 'E. J. Wren Homebrew',
+    url: 'http://ejwren.com/',
+    logo: 'ejwren.png',
+    address:
+      <address>
+        209 Oswego Street<br />
+        Liverpool, NY 13088<br />
+      </address>,
+    phone: '(315) 457-2282',
+  },
+  bostonHomebrew: {
+    name: 'Boston Homebrew Supply',
+    url: 'http://bostonhomebrewsupply.com/',
+    logo: 'boston-homebrew.jpg',
+    address:
+      <address>
+        1378 Beacon St<br/>
+        Brookline, MA 02446<br/>
+      </address>,
+    phone: '(617) 879-9550',
+  },
+  hammersmith: {
+    name: 'Hammersmith Homebrew Supplies',
+    url: 'http://hammersmithhomebrew.com/',
+    logo: 'hammersmith.jpg',
+    address:
+      <address>
+        883 New Loudon Road (Route 9)<br />
+        Latham, New York 12110<br />
+      </address>,
+    phone: '(518) 786-1853',
+  },
+};
+
+export const mailingAddresses = [
+  locations.parkManor,
+];
+
+export const dropOffs = [
+  locations.parkManor,
+  locations.barleyHopsAndGrapes,
+  locations.bitterAndEsters,
+];
+
+export const sponsors = {
+  // bronze = drop-off location only
+  bronze: [
+    locations.barleyHopsAndGrapes,
+    locations.bitterAndEsters,
+  ],
+  // silver = small prize
+  silver: [
+  ],
+  // gold = BOS prize
+  gold: [
+    locations.parkManor,
+  ],
+};
+
 export const judgeInstructions = (
   <p>
 
