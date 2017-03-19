@@ -3,7 +3,7 @@ import moment from 'moment';
 import { Link } from 'react-router';
 import { Officials } from './Officials';
 import { entryCost, entryDueDate, prejudgeDate, contestDate, registrationStartDate, organizerEmail,
-  locationName, locationAddress, dropoffStartDate } from './constants';
+  locationName, locationAddress, dropoffStartDate, registrationUrl } from './constants';
 
 const Entries = () => (
   <div className="container-fluid">
@@ -16,7 +16,7 @@ const Entries = () => (
       ) : (
         <div className="col-xs-6 alert alert-info text-center">
           To register your entries for the Knickerbocker, use the competition site:<br/>
-          <a className="btn btn-default" href="http://reggiebeer.com/ReggieEntry.php?CompetitionID=UCXSVE1000234">Register</a><br/>
+          <a className="btn btn-default" href={registrationUrl}>Register</a><br/>
           <small>Trouble using Reggie?  Click <Link to="/reggie">here</Link> or email the <a href={`email:${organizerEmail}`}>contest organizer</a>.</small>
         </div>
       )}

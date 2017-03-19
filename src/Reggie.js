@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router';
+import { registrationUrl, organizerEmail } from './constants';
 
 const Reggie = () => (
   <div className="row">
@@ -25,7 +27,7 @@ const Reggie = () => (
       <ol>
 
         <li>Go to the Reggie entry screen for the competition at <a
-        href="http://reggiebeer.com/ReggieEntry.php?CompetitionID=ZEUFQP1000173">http://reggiebeer.com/ReggieEntry.php?CompetitionID=ZEUFQP1000173</a>.</li>
+        href={registrationUrl}>{registrationUrl}</a>.</li>
 
         <li>If you already have an account in Reggie (i.e., you've entered a
             competition hosted by Reggie before), just log in.  If not, click
@@ -43,8 +45,7 @@ const Reggie = () => (
         Repeat for any additional entries.</li>
 
         <li>Select where you will be dropping off your entry.  We have a lot of
-        drop-off locations, and their full addresses are listed on the <a
-        href="http://kbotb.org/entry_details.html">entry details</a> page for
+        drop-off locations, and their full addresses are listed on the <Link to="entry-details.html">entry details</Link> page for
         your convenience.</li>
 
         <li>When you have everything finished, check the boxes for the new
@@ -59,9 +60,9 @@ const Reggie = () => (
       </ol>
       </p>
 
-      <p>If you have any questions about the entry process, please contact the
-      <a href="email:djmitche@gmail.com">contest organizer</a> at
-      djmitche@gmail.com.</p>
+      <p>If you have any questions about the entry process, please contact the{' '}
+      <a href={`email:${organizerEmail}`}>contest organizer</a> at{' '}
+      {organizerEmail}.</p>
 
     </div>
   </div>
