@@ -23,7 +23,7 @@ export const dropoffStartDate = moment('2017-09-01');
 export const entryDueDate = moment('2017-09-29');
 export const entryCost = '$8';
 
-const locations = {
+const companies = {
   parkManor: {
     name: 'The Park Manor Hotel',
     url: 'http://www.theparkmanorhotel.com/',
@@ -158,27 +158,27 @@ const locations = {
 };
 
 export const mailingAddresses = [
-  locations.parkManor,
+  companies.parkManor,
 ];
 
 export const dropOffs = [
-  locations.parkManor,
-  locations.barleyHopsAndGrapes,
-  locations.bitterAndEsters,
+  companies.parkManor,
+  companies.barleyHopsAndGrapes,
+  companies.bitterAndEsters,
 ];
 
 export const sponsors = {
   // bronze = drop-off location only
   bronze: [
-    locations.barleyHopsAndGrapes,
-    locations.bitterAndEsters,
+    companies.barleyHopsAndGrapes,
+    companies.bitterAndEsters,
   ],
   // silver = small prize
   silver: [
   ],
   // gold = BOS prize
   gold: [
-    locations.parkManor,
+    companies.parkManor,
   ],
 };
 

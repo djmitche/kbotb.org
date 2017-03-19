@@ -81,8 +81,31 @@ html {
     justify-content: space-around;
 }
 
+.sponsor-list img.sponsor {
+    margin: 1em;
+}
+
 img.sponsor {
     max-width: 240px;
+}
+
+.sponsor-carousel {
+    height: 240px;
+    position: relative; /* to give a reference for the absolute position below */
+}
+
+.sponsor-carousel .element {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+
+.sponsor-carousel .element img {
+    margin: auto auto;
+    max-height: 240px;
+    transition: opacity 1s;
 }
 
 .page #primary #footer {
