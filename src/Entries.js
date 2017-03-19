@@ -6,7 +6,7 @@ import { entryCost, entryDueDate, prejudgeDate, contestDate, registrationStartDa
   locationName, locationAddress, dropoffStartDate, registrationUrl, mailingAddresses, dropOffs } from './constants';
 
 const Location = props => (
-  <div className="location" key={location.name}>
+  <div className="location">
     {props.location.url ?
       <b><a href={props.location.url}>{props.location.name}</a></b> :
       <b>{props.location.name}</b>}
@@ -135,7 +135,7 @@ const Entries = () => (
         <p>Mail your entry to</p>
 
         <div className="entry-locations">
-        {mailingAddresses.map(location => (<Location location={location} />))}
+        {mailingAddresses.map(location => (<Location key={location.name} location={location} />))}
         </div>
 
         <h3>Drop-Off Locations</h3>
@@ -147,7 +147,7 @@ const Entries = () => (
         <br />
 
         <div className="entry-locations">
-        {dropOffs.map(location => (<Location location={location} />))}
+        {dropOffs.map(location => (<Location key={location.name} location={location} />))}
         </div>
 
         {moment().isBefore(registrationStartDate) &&

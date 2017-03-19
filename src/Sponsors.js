@@ -2,7 +2,7 @@ import React from 'react';
 import { sponsors } from './constants';
 
 const Sponsor = props => (
-  <div className="sponsor" key={props.sponsor.name}>
+  <div className="sponsor">
     <a href={props.sponsor.url}>
       <img className="img-responsive center-block sponsor" src={`logos/${props.sponsor.logo}`} />
     </a>
@@ -19,9 +19,9 @@ const Sponsors = () => (
       </div>
     </div>
     <div className="sponsor-list">
-      {sponsors.gold.map(spon => (<Sponsor sponsor={spon} />))}
-      {sponsors.silver.map(spon => (<Sponsor sponsor={spon} />))}
-      {sponsors.bronze.map(spon => (<Sponsor sponsor={spon} />))}
+      {sponsors.gold.map(spon => (<Sponsor key={spon.name} sponsor={spon} />))}
+      {sponsors.silver.map(spon => (<Sponsor key={spon.name} sponsor={spon} />))}
+      {sponsors.bronze.map(spon => (<Sponsor key={spon.name} sponsor={spon} />))}
     </div>
   </div>
 );
