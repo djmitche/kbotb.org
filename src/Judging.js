@@ -64,9 +64,24 @@ const Judging = () => (
 
         {stewardInstructions}
 
-        <p>Judges and stewards are invited to stay for the awards ceremony and
-        participate in the raffle.  The Knickerbocker's raffle prizes are
-        generously supplied by our <Link to="/sponsors">sponsors</Link>.</p>
+        <h3>Afterward</h3>
+
+        <p>Judges and stewards are invited to stay after the last session for
+        the awards ceremony, raffle, and post-competition dinner.</p>
+
+        <p>Details to follow.</p>
+
+        <h3>Room Discount</h3>
+
+        <p>If you would like to stay one or more nights, the contest venue, the
+        <a href="http://www.theparkmanorhotel.com/">Park Manor Hotel</a>, is offering
+        a discount on rooms during the contest. Just ask for the Knickerbocker rate
+        when making your reservation.</p>
+
+        <h3>Sponsors</h3>
+
+        <p>The Knickerbocker's contest and raffle prizes are generously
+        supplied by our <Link to="/sponsors">sponsors</Link>.</p>
 
       </div>
     </div>

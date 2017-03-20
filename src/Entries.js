@@ -54,6 +54,10 @@ const Entries = () => (
           {prejudgeDate && <span>A smaller pre-judging session will take place {prejudgeDate.format('dddd, MMMM Do')}.</span>}
           </li>
 
+          <li>The post-event awards ceremony will be live-streamed on <a
+          href="https://www.facebook.com/groups/Kbotb.org/">the contest's
+          facebook page</a>.</li>
+
         </ul>
 
         <h3>Entry Fees</h3>
