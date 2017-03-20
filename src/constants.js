@@ -183,6 +183,7 @@ export const dropOffs = [
   companies.heSouthShore,
   companies.heWestchester,
   companies.vtHomebrew,
+  companies.bostonHomebrew,
 ];
 
 export const sponsors = {
@@ -193,6 +194,7 @@ export const sponsors = {
     companies.saratogaZymurgist,
     companies.heGreenbush,
     companies.vtHomebrew,
+    companies.bostonHomebrew,
   ],
   // silver = small prize
   silver: [
