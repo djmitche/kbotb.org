@@ -185,8 +185,8 @@ export const sponsors = {
 export const judgeInstructions = (
   <p>
 
-  Judges should plan to arrive no later than 9:00am, and aside from those
-  selected for the best-of-show round, will be finished judging around 3:00.
+  Judges should plan to arrive no later than 8:30am, and aside from those
+  selected for the best-of-show round, will be finished judging around 4:00.
   You are, of course, encouraged to stay around for the raffle and announcement
   of the winners.  Remember that we depend on our judges to run a great
   contest!  If for any reason you cannot make it to the contest or may arrive
@@ -199,7 +199,7 @@ export const judgeInstructions = (
 export const stewardInstructions = (
   <p>
 
-  Stewards should plan to arrive at 8:30am to help set up the space, and to
+  Stewards should plan to arrive at 8:00am to help set up the space, and to
   stay until 5:00 to help clean up.
 
   </p>
