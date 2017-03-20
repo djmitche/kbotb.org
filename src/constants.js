@@ -155,6 +155,17 @@ const companies = {
       </address>,
     phone: '(518) 786-1853',
   },
+  vtHomebrew: {
+    name: 'Vermont Homebrew Supply',
+    url: 'http://vermonthhomebrew.com/',
+    logo: 'vthomebrew.png',
+    address:
+      <address>
+        147 E. Allen Street, Route 15<br />
+        Winooski, Vermont 05404<br />
+      </address>,
+    phone: '(802) 655-2070',
+  },
 };
 
 export const mailingAddresses = [
@@ -165,6 +176,13 @@ export const dropOffs = [
   companies.parkManor,
   companies.barleyHopsAndGrapes,
   companies.bitterAndEsters,
+  companies.saratogaZymurgist,
+  companies.heGreenbush,
+  companies.heBoylston,
+  companies.heCambridge,
+  companies.heSouthShore,
+  companies.heWestchester,
+  companies.vtHomebrew,
 ];
 
 export const sponsors = {
@@ -172,6 +190,9 @@ export const sponsors = {
   bronze: [
     companies.barleyHopsAndGrapes,
     companies.bitterAndEsters,
+    companies.saratogaZymurgist,
+    companies.heGreenbush,
+    companies.vtHomebrew,
   ],
   // silver = small prize
   silver: [

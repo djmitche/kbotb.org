@@ -140,11 +140,11 @@ const Entries = () => (
 
         <h3>Drop-Off Locations</h3>
 
-        Drop off your fully-labeled bottles at any of these locations.  Note
-        that locations may appreciate it if you bring along an empty case that
-        can hold your entries along with other entrants' bottles.
-
-        <br />
+        <p>Drop off your fully-labeled bottles at any of these locations.
+        <b>IMPORTANT:</b> You must still package your entries, even if you are
+        dropping off! Bring your entries in a light-proof, stackable box so the
+        staff at the location can store them efficiently.  Locations may turn
+        you away if you show up with a bottle in each hand.</p>
 
         <div className="entry-locations">
         {dropOffs.map(location => (<Location key={location.name} location={location} />))}
