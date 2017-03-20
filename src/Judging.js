@@ -73,7 +73,7 @@ const Judging = () => (
 
         <h3>Room Discount</h3>
 
-        <p>If you would like to stay one or more nights, the contest venue, the
+        <p>If you would like to stay one or more nights, the contest venue, the{' '}
         <a href="http://www.theparkmanorhotel.com/">Park Manor Hotel</a>, is offering
         a discount on rooms during the contest. Just ask for the Knickerbocker rate
         when making your reservation.</p>
