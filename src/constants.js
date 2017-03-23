@@ -157,7 +157,7 @@ const companies = {
   },
   vtHomebrew: {
     name: 'Vermont Homebrew Supply',
-    url: 'http://vermonthhomebrew.com/',
+    url: 'http://vermonthomebrew.com/',
     logo: 'vthomebrew.png',
     address:
       <address>
