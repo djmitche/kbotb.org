@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 import moment from 'moment';
-import { entryCost, entryDueDate, locationName, locationAddress } from './constants';
+import { prejudgeDate, contestDate, entryCost, entryDueDate, locationName, locationAddress } from './constants';
 
 const Container = props => (
   <div className="page">
@@ -21,9 +21,11 @@ const Container = props => (
         <p>Cost: {entryCost} per entry <br />
           <span style={{ fontSize: '70%' }}>(two 12oz bottles)</span></p>
         <p>Prizes, raffle, and camraderie!</p>
+        <p>Contest results will be live-streamed<br />stay tuned!</p>
       </div>
       <div id="juding-info">
         <p>Judging:</p>
+        <p>{prejudgeDate && `${prejudgeDate.format('MMMM Do')} - `} {contestDate.format('MMMM Do')}</p>
         <p>{locationName}<br />
           <span style={{ fontWeight: 'normal' }}>{locationAddress}</span>
         </p>
