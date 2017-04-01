@@ -166,14 +166,36 @@ const companies = {
       </address>,
     phone: '(802) 655-2070',
   },
+  shmaltz: {
+    name: 'Shmaltz Brewing',
+    url: 'http://shmaltzbrewing.com/',
+    logo: 'shmaltz.png',
+    address:
+      <address>
+        C/O KBOTB<br />
+        6 Fairchild square,<br />
+        Clifton Park, NY. 12065
+      </address>,
+    phone: '(518) 406-5430',
+  },
+  hopsAndBarley: {
+    name: 'Hops & Barley',
+    url: 'https://www.facebook.com/HopsandBarleyMarket/',
+    logo: 'hopsandbarley.png',
+    address:
+      <address>
+        756 Glen Street<br />
+        Queensbury, NY 12804
+      </address>,
+    phone: '(518) 798-2337',
+  },
 };
 
 export const mailingAddresses = [
-  companies.parkManor,
+  companies.shmaltz,
 ];
 
 export const dropOffs = [
-  companies.parkManor,
   companies.barleyHopsAndGrapes,
   companies.bitterAndEsters,
   companies.saratogaZymurgist,
@@ -184,17 +206,23 @@ export const dropOffs = [
   companies.heWestchester,
   companies.vtHomebrew,
   companies.bostonHomebrew,
+  companies.ejWren,
+  companies.hammersmith,
+  companies.hopsAndBarley,
 ];
 
 export const sponsors = {
   // bronze = drop-off location only
   bronze: [
+    companies.shmaltz,
     companies.barleyHopsAndGrapes,
     companies.bitterAndEsters,
     companies.saratogaZymurgist,
     companies.heGreenbush,
     companies.vtHomebrew,
     companies.bostonHomebrew,
+    companies.ejWren,
+    companies.hammersmith,
   ],
   // silver = small prize
   silver: [

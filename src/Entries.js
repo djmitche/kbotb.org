@@ -144,8 +144,8 @@ const Entries = () => (
 
         <h3>Drop-Off Locations</h3>
 
-        <p>Drop off your fully-labeled bottles at any of these locations.
-        <b>IMPORTANT:</b> You must still package your entries, even if you are
+        <p>Drop off your fully-labeled bottles at any of these locations. <b>IMPORTANT:</b>
+        You must still package your entries, even if you are
         dropping off! Bring your entries in a light-proof, stackable box so the
         staff at the location can store them efficiently.  Locations may turn
         you away if you show up with a bottle in each hand.</p>
