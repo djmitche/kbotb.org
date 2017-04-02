@@ -192,23 +192,25 @@ const companies = {
 };
 
 export const mailingAddresses = [
-  companies.shmaltz,
+ { company: companies.shmaltz, due: moment('2017-10-07') },
 ];
 
 export const dropOffs = [
-  companies.barleyHopsAndGrapes,
-  companies.bitterAndEsters,
-  companies.saratogaZymurgist,
-  companies.heGreenbush,
-  companies.heBoylston,
-  companies.heCambridge,
-  companies.heSouthShore,
-  companies.heWestchester,
-  companies.vtHomebrew,
-  companies.bostonHomebrew,
-  companies.ejWren,
-  companies.hammersmith,
-  companies.hopsAndBarley,
+  // for locations with a special due date, include the "due" field
+  { company: companies.barleyHopsAndGrapes },
+  { company: companies.bitterAndEsters },
+  { company: companies.saratogaZymurgist, due: moment('2017-10-07') },
+  { company: companies.heGreenbush, due: moment('2017-10-07') },
+  { company: companies.heBoylston },
+  { company: companies.heCambridge },
+  { company: companies.heSouthShore },
+  { company: companies.heWestchester },
+  { company: companies.vtHomebrew },
+  { company: companies.bostonHomebrew },
+  { company: companies.ejWren },
+  { company: companies.hammersmith, due: moment('2017-10-07') },
+  { company: companies.hopsAndBarley, due: moment('2017-10-07') },
+  { company: companies.shmaltz, due: moment('2017-10-07') },
 ];
 
 export const sponsors = {
@@ -223,6 +225,7 @@ export const sponsors = {
     companies.bostonHomebrew,
     companies.ejWren,
     companies.hammersmith,
+    companies.hopsAndBarley,
   ],
   // silver = small prize
   silver: [

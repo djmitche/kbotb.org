@@ -12,6 +12,8 @@ const Location = props => (
       <b>{props.location.name}</b>}
     {props.location.address}
     {props.location.phone}
+    {props.due &&
+      <span style={{ fontStyle: 'italic' }}><br />Entries Accepted Until {props.due.format('MM/DD')}</span>}
   </div>
 );
 
@@ -42,10 +44,10 @@ const Entries = () => (
 
           <li>Entries must be dropped off, or arrive, after {dropoffStartDate.format('MMMM Do, YYYY')}.</li>
 
-          <li>Entries, registration, and payment are due {entryDueDate.format('MMMM Do, YYYY')}.
-          Drop-offs must be delivered before the location closes, and shipped
-          entries must <em>arrive</em> by the {entryDueDate.format('Do')}. <em>We can no longer
-          accept entries hand-carried to the judging sessions.</em>.</li>
+          <li>Entries, registration, and payment are due {entryDueDate.format('MMMM Do, YYYY')}, except as noted below.
+          Drop-offs must be delivered before the location closes, and shipped entries
+          must <em>arrive</em> by the due date. <em>We can no longer accept entries
+          hand-carried to the judging sessions.</em>.</li>
 
           <li>We will make every effort to track down missing entries between
           the entry deadline and the judging esssions.</li>
@@ -139,7 +141,8 @@ const Entries = () => (
         <p>Mail your entry to</p>
 
         <div className="entry-locations">
-        {mailingAddresses.map(location => (<Location key={location.name} location={location} />))}
+        {mailingAddresses.map(({ company, due }) =>
+            (<Location key={location.name} location={company} due={due} />))}
         </div>
 
         <h3>Drop-Off Locations</h3>
@@ -151,7 +154,8 @@ const Entries = () => (
         you away if you show up with a bottle in each hand.</p>
 
         <div className="entry-locations">
-        {dropOffs.map(location => (<Location key={location.name} location={location} />))}
+        {dropOffs.map(({ company, due }) =>
+            (<Location key={location.name} location={company} due={due} />))}
         </div>
 
         {moment().isBefore(registrationStartDate) &&
