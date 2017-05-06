@@ -189,6 +189,17 @@ const companies = {
       </address>,
     phone: '(518) 798-2337',
   },
+  battleHill: {
+    name: 'Battle Hill Brewing Co.',
+    url: 'https://battlehillbrewing.com/',
+    logo: 'battlehill.png',
+    address:
+      <address>
+        4 Charles St<br />
+        Fort Ann, NY 12827
+      </address>,
+    phone: '(518) 639-1033',
+  },
 };
 
 export const mailingAddresses = [
@@ -229,6 +240,7 @@ export const sponsors = {
   ],
   // silver = small prize
   silver: [
+    companies.battleHill,
   ],
   // gold = BOS prize
   gold: [
