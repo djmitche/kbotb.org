@@ -260,6 +260,17 @@ const companies = {
     logo: 'bsg.jpg',
     phone: '(800) 374-2739',
   },
+  fiveStar: {
+    name: 'Five Star Chemicals & Supply, Inc.',
+    url: 'http://www.fivestarchemicals.com/',
+    logo: 'fivestar.png',
+    address:
+      <address>
+        4915 E. 52nd Ave<br />
+        Commerce City, Colorado 80022
+      </address>,
+    phone: '(800) 782-7019',
+  },
 };
 
 export const mailingAddresses = [
@@ -308,6 +319,7 @@ export const sponsors = {
     companies.fermentis,
     companies.rubyStreet,
     companies.bsg,
+    companies.fiveStar,
   ],
   // gold = BOS prize
   gold: [
