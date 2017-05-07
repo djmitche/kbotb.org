@@ -282,6 +282,11 @@ const companies = {
       </address>,
     phone: '(518)357-8005',
   },
+  aha: {
+    name: 'American Homebrewers Association',
+    url: 'https://www.homebrewersassociation.org',
+    logo: 'aha.jpg',
+  }
 };
 
 export const mailingAddresses = [
@@ -332,6 +337,7 @@ export const sponsors = {
     companies.fiveStar,
     companies.hopsAndBarley,
     companies.mohawkTapRoom,
+    companies.aha,
   ],
   // gold = BOS prize
   gold: [
