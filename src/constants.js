@@ -200,6 +200,66 @@ const companies = {
       </address>,
     phone: '(518) 639-1033',
   },
+  ninePin: {
+    name: 'Nine Pin Cider Works',
+    url: 'http://www.ninepincider.com/',
+    logo: 'ninepin.png',
+    address:
+      <address>
+        929 Broadway<br />
+        Albany, NY 12207
+      </address>,
+    phone: '(518) 639-1033',
+  },
+  zymology: {
+    name: 'Zymology Labs',
+    url: 'http://www.zymologylabs.com/',
+    logo: 'zymology.png',
+    address:
+      <address>
+        716 Pine Street<br />
+        Burlington, VT
+      </address>,
+    phone: '(802) 318-1583',
+  },
+  brewersFriend: {
+    name: 'Brewers Friend',
+    url: 'https://www.brewersfriend.com/',
+    logo: 'brewers-friend.png',
+  },
+  aih: {
+    name: 'Adventures In Homebrewing',
+    url: 'http://www.homebrewing.org/',
+    logo: 'aih.jpg',
+    address:
+      <address>
+        23869 Van Born Rd<br />
+        Taylor, MI 48180
+      </address>,
+    phone: '(313)-277-2739',
+  },
+  fermentis: {
+    name: 'Fermentis',
+    url: 'http://www.fermentis.com/',
+    logo: 'fermentis.png',
+  },
+  rubyStreet: {
+    name: 'Ruby Street Brewing',
+    url: 'http://www.rubystreetbrewing.com/',
+    logo: 'rubystreet.png',
+    address:
+      <address>
+        PO BOX 271722<br />
+        Fort Collins, Colorado 80527
+      </address>,
+    phone: '(970) 673-7829',
+  },
+  bsg: {
+    name: 'BSG CraftBrewing',
+    url: 'https://bsgcraftbrewing.com/',
+    logo: 'bsg.jpg',
+    phone: '(800) 374-2739',
+  },
 };
 
 export const mailingAddresses = [
@@ -241,6 +301,13 @@ export const sponsors = {
   // silver = small prize
   silver: [
     companies.battleHill,
+    companies.ninePin,
+    companies.zymology,
+    companies.brewersFriend,
+    companies.aih,
+    companies.fermentis,
+    companies.rubyStreet,
+    companies.bsg,
   ],
   // gold = BOS prize
   gold: [
