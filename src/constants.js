@@ -173,7 +173,7 @@ const companies = {
     address:
       <address>
         C/O KBOTB<br />
-        6 Fairchild square,<br />
+        6 Fairchild Square<br />
         Clifton Park, NY. 12065
       </address>,
     phone: '(518) 406-5430',
@@ -223,7 +223,7 @@ const companies = {
     phone: '(802) 318-1583',
   },
   brewersFriend: {
-    name: 'Brewers Friend',
+    name: 'Brewer\'s Friend',
     url: 'https://www.brewersfriend.com/',
     logo: 'brewers-friend.png',
   },
@@ -250,7 +250,7 @@ const companies = {
     address:
       <address>
         PO BOX 271722<br />
-        Fort Collins, Colorado 80527
+        Fort Collins, CO 80527
       </address>,
     phone: '(970) 673-7829',
   },
@@ -267,18 +267,18 @@ const companies = {
     address:
       <address>
         4915 E. 52nd Ave<br />
-        Commerce City, Colorado 80022
+        Commerce City, CO 80022
       </address>,
     phone: '(800) 782-7019',
   },
   mohawkTapRoom: {
     name: 'Mohawk Tap Room',
     url: 'http://www.mohawktaproom.com/',
-    logo: 'mohawk-tap-room.png',
+    logo: 'mohawk-tap-room,.png',
     address:
       <address>
         153 Mohawk Ave<br />
-        Scotia, Ny 12302
+        Scotia, NY 12302
       </address>,
     phone: '(518)357-8005',
   },
