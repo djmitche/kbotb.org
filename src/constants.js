@@ -271,6 +271,17 @@ const companies = {
       </address>,
     phone: '(800) 782-7019',
   },
+  mohawkTapRoom: {
+    name: 'Mohawk Tap Room',
+    url: 'http://www.mohawktaproom.com/',
+    logo: 'mohawk-tap-room.png',
+    address:
+      <address>
+        153 Mohawk Ave<br />
+        Scotia, Ny 12302
+      </address>,
+    phone: '(518)357-8005',
+  },
 };
 
 export const mailingAddresses = [
@@ -307,7 +318,6 @@ export const sponsors = {
     companies.bostonHomebrew,
     companies.ejWren,
     companies.hammersmith,
-    companies.hopsAndBarley,
   ],
   // silver = small prize
   silver: [
@@ -320,6 +330,8 @@ export const sponsors = {
     companies.rubyStreet,
     companies.bsg,
     companies.fiveStar,
+    companies.hopsAndBarley,
+    companies.mohawkTapRoom,
   ],
   // gold = BOS prize
   gold: [
