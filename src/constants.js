@@ -286,7 +286,7 @@ const companies = {
     name: 'American Homebrewers Association',
     url: 'https://www.homebrewersassociation.org',
     logo: 'aha.jpg',
-  }
+  },
 };
 
 export const mailingAddresses = [
