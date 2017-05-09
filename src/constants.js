@@ -274,7 +274,7 @@ const companies = {
   mohawkTapRoom: {
     name: 'Mohawk Tap Room',
     url: 'http://www.mohawktaproom.com/',
-    logo: 'mohawk-tap-room,.png',
+    logo: 'mohawk-tap-room.jpg',
     address:
       <address>
         153 Mohawk Ave<br />
@@ -285,7 +285,7 @@ const companies = {
   aha: {
     name: 'American Homebrewers Association',
     url: 'https://www.homebrewersassociation.org',
-    logo: 'aha.jpg',
+    logo: 'aha.png',
   },
 };
 
