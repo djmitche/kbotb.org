@@ -287,6 +287,16 @@ const companies = {
     url: 'https://www.homebrewersassociation.org',
     logo: 'aha.png',
   },
+  love2Brew: {
+    name: 'Love2Brew',
+    url: 'https://www.love2brew.com/',
+    logo: 'love2brew.png',
+  },
+  craftBeerAndBrewing: {
+    name: 'Craft Beer & Brewing Magazine',
+    url: 'https://beerandbrewing.com/',
+    logo: 'cbb.png',
+  },
 };
 
 export const mailingAddresses = [
@@ -338,6 +348,8 @@ export const sponsors = {
     companies.hopsAndBarley,
     companies.mohawkTapRoom,
     companies.aha,
+    companies.love2Brew,
+    companies.craftBeerAndBrewing,
   ],
   // gold = BOS prize
   gold: [
