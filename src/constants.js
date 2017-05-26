@@ -297,6 +297,31 @@ const companies = {
     url: 'https://beerandbrewing.com/',
     logo: 'cbb.png',
   },
+  dudaDiesel: {
+    name: 'Duda Diesel Biodiesel Supply',
+    url: 'https://www.dudadiesel.com/',
+    logo: 'duda.jpg',
+  },
+  angryBeaver: {
+    name: 'Angry Beaver Knives',
+    url: 'https://www.facebook.com/ADKWLC/',
+    logo: 'angry-beaver.png',
+  },
+  siebel: {
+    name: 'Siebel Institute',
+    url: 'https://www.siebelinstitute.com/',
+    logo: 'siebel.png',
+  },
+  freshops: {
+    name: 'Freshops',
+    url: 'http://freshops.com/',
+    logo: 'freshops.png',
+  },
+  sierraNevada: {
+    name: 'Sierra Nevada',
+    url: 'http://www.sierranevada.com/',
+    logo: 'sierra-nevada.png',
+  },
 };
 
 export const mailingAddresses = [
@@ -324,18 +349,18 @@ export const dropOffs = [
 export const sponsors = {
   // bronze = drop-off location only
   bronze: [
-    companies.shmaltz,
-    companies.barleyHopsAndGrapes,
-    companies.bitterAndEsters,
     companies.saratogaZymurgist,
     companies.heGreenbush,
     companies.vtHomebrew,
     companies.bostonHomebrew,
-    companies.ejWren,
     companies.hammersmith,
   ],
   // silver = small prize
   silver: [
+    companies.shmaltz,
+    companies.bitterAndEsters,
+    companies.ejWren,
+    companies.barleyHopsAndGrapes,
     companies.battleHill,
     companies.ninePin,
     companies.zymology,
@@ -350,6 +375,11 @@ export const sponsors = {
     companies.aha,
     companies.love2Brew,
     companies.craftBeerAndBrewing,
+    companies.dudaDiesel,
+    companies.angryBeaver,
+    companies.siebel,
+    companies.freshops,
+    companies.sierraNevada,
   ],
   // gold = BOS prize
   gold: [
