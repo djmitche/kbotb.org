@@ -73,7 +73,11 @@ export const Root = () => (
       <center><h3>Contest Sponsors</h3></center>
     <center><Link to="/sponsors">More Sponsors</Link></center>
       <Link to="/sponsors">
-        <SponsorCarousel sponsors={sponsors.gold.concat(sponsors.silver).concat(sponsors.bronze)} />
+        <SponsorCarousel sponsors={
+          sponsors.platinum
+            .concat(sponsors.gold)
+            .concat(sponsors.silver)
+            .concat(sponsors.bronze)} />
       </Link>
     </div>
   </div>

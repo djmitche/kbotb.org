@@ -18,9 +18,20 @@ const Sponsors = () => (
         of many businesses and organizations in the homebrewing community.</p>
       </div>
     </div>
+    <h3>Platinum</h3>
+    <div className="sponsor-list">
+      {sponsors.platinum.map(spon => (<Sponsor key={spon.name} sponsor={spon} />))}
+    </div>
+    <h3>Gold</h3>
     <div className="sponsor-list">
       {sponsors.gold.map(spon => (<Sponsor key={spon.name} sponsor={spon} />))}
+    </div>
+    <h3>Silver</h3>
+    <div className="sponsor-list">
       {sponsors.silver.map(spon => (<Sponsor key={spon.name} sponsor={spon} />))}
+    </div>
+    <h3>Bronze</h3>
+    <div className="sponsor-list">
       {sponsors.bronze.map(spon => (<Sponsor key={spon.name} sponsor={spon} />))}
     </div>
   </div>

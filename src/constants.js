@@ -322,6 +322,11 @@ const companies = {
     url: 'http://www.sierranevada.com/',
     logo: 'sierra-nevada.png',
   },
+  meanMax: {
+    name: 'Mean Max Brew Works',
+    url: 'http://www.meanmaxbrew.com/',
+    logo: 'meanmax.png',
+  },
 };
 
 export const mailingAddresses = [
@@ -347,7 +352,6 @@ export const dropOffs = [
 ];
 
 export const sponsors = {
-  // bronze = drop-off location only
   bronze: [
     companies.saratogaZymurgist,
     companies.heGreenbush,
@@ -355,9 +359,7 @@ export const sponsors = {
     companies.bostonHomebrew,
     companies.hammersmith,
   ],
-  // silver = small prize
   silver: [
-    companies.shmaltz,
     companies.bitterAndEsters,
     companies.ejWren,
     companies.barleyHopsAndGrapes,
@@ -380,9 +382,12 @@ export const sponsors = {
     companies.siebel,
     companies.freshops,
     companies.sierraNevada,
+    companies.meanMax,
   ],
-  // gold = BOS prize
   gold: [
+  ],
+  platinum: [
+    companies.shmaltz,
     companies.parkManor,
   ],
 };
