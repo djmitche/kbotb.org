@@ -393,7 +393,7 @@ export const sponsors = {
     companies.freshops,
     companies.sierraNevada,
     companies.meanMax,
-    companies.whitelabs,
+    companies.whiteLabs,
     companies.brewBag,
   ],
   gold: [
