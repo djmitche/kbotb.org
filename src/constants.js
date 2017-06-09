@@ -327,6 +327,16 @@ const companies = {
     url: 'http://www.meanmaxbrew.com/',
     logo: 'meanmax.png',
   },
+  whiteLabs: {
+    name: 'White Labs',
+    url: 'http://www.whitelabs.com/',
+    logo: 'whitelabs.png',
+  },
+  brewBag: {
+    name: 'Brew Bag',
+    url: 'https://www.brewinabag.com/',
+    logo: 'biab.png',
+  },
 };
 
 export const mailingAddresses = [
@@ -383,6 +393,8 @@ export const sponsors = {
     companies.freshops,
     companies.sierraNevada,
     companies.meanMax,
+    companies.whitelabs,
+    companies.brewBag,
   ],
   gold: [
   ],
