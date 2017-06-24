@@ -337,6 +337,46 @@ const companies = {
     url: 'https://www.brewinabag.com/',
     logo: 'biab.png',
   },
+  argyle: {
+    name: 'Argyle Brewing',
+    url: 'http://argylebrewing.com/',
+    logo: 'argyle.png',
+  },
+  grogTag: {
+    name: 'GrogTag',
+    url: 'http://www.grogtag.com/',
+    logo: 'grogtag.jpg',
+  },
+  henryStreet: {
+    name: 'Henry Street Taproom',
+    url: 'http://www.henrystreettaproom.com/',
+    logo: 'henrysttaproom.png',
+  },
+  kegConnection: {
+    name: 'Keg Connection',
+    url: 'https://www.kegconnection.com/',
+    logo: 'kegconn.png',
+  },
+  wyeast: {
+    name: 'Wyeast',
+    url: 'https://wyeastlab.com/',
+    logo: 'wyeast.png',
+  },
+  amoretti: {
+    name: 'Amoretti',
+    url: 'https://amoretti.com/',
+    logo: 'amoretti.png',
+  },
+  theFactory: {
+    name: 'The Factory Eatery & Spirits',
+    url: 'http://www.thefactoryeatery.com/',
+    logo: 'factory.png',
+  },
+  beerDust: {
+    name: 'Beer Dust',
+    url: 'https://beerdust.com/',
+    logo: 'beerdust.png',
+  },
 };
 
 export const mailingAddresses = [
@@ -395,6 +435,14 @@ export const sponsors = {
     companies.meanMax,
     companies.whiteLabs,
     companies.brewBag,
+    companies.argyle,
+    companies.grogTag,
+    companies.henryStreet,
+    companies.kegConnection,
+    companies.wyeast,
+    companies.amoretti,
+    companies.theFactory,
+    companies.beerDust,
   ],
   gold: [
   ],
