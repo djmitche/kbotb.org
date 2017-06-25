@@ -23,6 +23,15 @@ export const dropoffStartDate = moment('2017-09-01');
 export const entryDueDate = moment('2017-09-29');
 export const entryCost = '$8';
 
+const shuffle = a => {
+  const result = a;
+  for (let i = result.length; i; i -= 1) {
+    const j = Math.floor(Math.random() * i);
+    [result[i - 1], result[j]] = [result[j], result[i - 1]];
+  }
+  return result;
+};
+
 const companies = {
   parkManor: {
     name: 'The Park Manor Hotel',
@@ -407,7 +416,7 @@ export const dropOffs = [
 ];
 
 export const sponsors = {
-  bronze: [
+  bronze: shuffle([
     companies.saratogaZymurgist,
     companies.heGreenbush,
     companies.vtHomebrew,
@@ -421,8 +430,8 @@ export const sponsors = {
     companies.sierraNevada,
     companies.whiteLabs,
     companies.wyeast,
-  ],
-  silver: [
+  ]),
+  silver: shuffle([
     companies.bitterAndEsters,
     companies.ejWren,
     companies.barleyHopsAndGrapes,
@@ -442,8 +451,8 @@ export const sponsors = {
     companies.amoretti,
     companies.theFactory,
     companies.allAboutBeer,
-  ],
-  gold: [
+  ]),
+  gold: shuffle([
     companies.brewersFriend,
     companies.craftBeerAndBrewing,
     companies.kegConnection,
@@ -452,11 +461,11 @@ export const sponsors = {
     companies.zymology,
     // specialty food groups (Jim Hume's sister in law)
     companies.shmaltz,
-  ],
-  platinum: [
+  ]),
+  platinum: shuffle([
     companies.parkManor,
     companies.henryStreet,
-  ],
+  ]),
 };
 
 export const judgeInstructions = (
