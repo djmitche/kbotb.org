@@ -15,6 +15,9 @@ const Container = props => (
       </div>
     </div>
     <div id="sidebar">
+      <p><a href="https://www.facebook.com/events/134282223802413/">
+        <img className="centered-logo" src="img/fuofb.png" />
+      </a></p>
       <div id="contest-info">
         <p>Get your homebrew evaluated by BJCP certified judges</p>
         <p>Entry deadline: {moment().isAfter(entryDueDate) ? <em>Entries Closed</em> : entryDueDate.format('MMMM Do, YYYY')}.</p>
