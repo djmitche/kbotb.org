@@ -391,6 +391,16 @@ const companies = {
     url: 'http://allaboutbeer.com',
     logo: 'aab.png',
   },
+  bells: {
+    name: 'Bell\'s Brewery',
+    url: 'https://www.bellsbeer.com/',
+    logo: 'bells.png',
+  },
+  spike: {
+    name: 'Spike Brewing',
+    url: 'https://spikebrewing.com/',
+    logo: 'spike.png',
+  },
 };
 
 export const mailingAddresses = [
@@ -430,6 +440,7 @@ export const sponsors = {
     companies.sierraNevada,
     companies.whiteLabs,
     companies.wyeast,
+    companies.bells,
   ]),
   silver: shuffle([
     companies.bitterAndEsters,
@@ -451,6 +462,7 @@ export const sponsors = {
     companies.amoretti,
     companies.theFactory,
     companies.allAboutBeer,
+    companies.spike,
   ]),
   gold: shuffle([
     companies.brewersFriend,
