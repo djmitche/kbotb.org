@@ -434,7 +434,6 @@ export const sponsors = {
     companies.hammersmith,
     companies.aha,
     companies.beerDust,
-    companies.bsg,
     companies.fermentis,
     companies.siebel,
     companies.sierraNevada,
@@ -463,6 +462,7 @@ export const sponsors = {
     companies.theFactory,
     companies.allAboutBeer,
     companies.spike,
+    companies.bsg,
   ]),
   gold: shuffle([
     companies.brewersFriend,
