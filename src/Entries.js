@@ -164,16 +164,15 @@ const Entries = () => (
         <h3>Awards</h3>
 
         <p>The awards ceremony will take place as soon as all judging is
-        completed and results can be compiled.</p>
+        completed and results can be compiled.  Medals or ribbons will be
+        awarded to 1st, 2nd, and 3rd place in each award flight.  The 1st place
+        entry in each category will advance to the Best of Show round where the
+        top three beers will be selected.  Additional prizes may be awarded to
+        those winners present at the awards ceremony at the discretion of the
+        competition organizers.</p>
 
-        <p>Medals or ribbons will be awarded to 1st, 2nd, and 3rd place in each
-        award flight.</p>
-
-        <p>The 1st place entry in each category will advance to the Best of
-        Show round where the top three beers will be selected.</p>
-
-        <p>Additional prizes may be awarded to those winners present at the
-        awards ceremony at the discretion of the competition organizers.</p>
+        <p>Stick around after the awards ceremony for the inaugural <Link
+        to="/party">KBOTB After-Party</Link>!</p>
 
         <p>Score sheets and awards will be available for pick up after the
         ceremony concludes. Awards and score sheets not picked up and BJCP

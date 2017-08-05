@@ -139,6 +139,11 @@ img.sponsor {
     font-weight: bold;
 }
 
+#sidebar a {
+    color: #e0e0ff;
+    font-style: italic;
+}
+
 #contest-info p {
     margin: 4em 0px;
 }

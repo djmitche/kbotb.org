@@ -8,6 +8,7 @@ import Entries from './Entries';
 import Sponsors from './Sponsors';
 import Judging from './Judging';
 import Reggie from './Reggie';
+import Party from './Party';
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 const App = () => (
@@ -18,6 +19,7 @@ const App = () => (
       <Route path="sponsors" components={{ body: Sponsors }} />
       <Route path="judging-details" components={{ body: Judging }} />
       <Route path="reggie" components={{ body: Reggie }} />
+      <Route path="party" components={{ body: Party }} />
     </Route>
   </Router>
 );

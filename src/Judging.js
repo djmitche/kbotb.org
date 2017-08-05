@@ -64,12 +64,12 @@ const Judging = () => (
 
         {stewardInstructions}
 
-        <h3>Afterward</h3>
+        <h3>Afterward..</h3>
 
         <p>Judges and stewards are invited to stay after the last session for
-        the awards ceremony, raffle, and post-competition dinner.</p>
-
-        <p>Details to follow.</p>
+        the awards ceremony and <Link to="/party">KBOTB After-Party</Link> - a
+        reception of hors d'oeuvres & home brew following the awards
+        ceremony.</p>
 
         <h3>Room Discount</h3>
 

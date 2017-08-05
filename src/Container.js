@@ -23,7 +23,7 @@ const Container = props => (
         <p>Entry deadline: {moment().isAfter(entryDueDate) ? <em>Entries Closed</em> : entryDueDate.format('MMMM Do, YYYY')}.</p>
         <p>Cost: {entryCost} per entry <br />
           <span style={{ fontSize: '70%' }}>(two 12oz bottles)</span></p>
-        <p>Prizes, raffle, and camraderie!</p>
+        <p>Prizes, raffle, and <Link to="/party">an after-party</Link>!</p>
         <p>Contest results will be live-streamed<br />stay tuned!</p>
       </div>
       <div id="juding-info">
