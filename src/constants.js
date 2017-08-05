@@ -402,6 +402,11 @@ const companies = {
     url: 'https://spikebrewing.com/',
     logo: 'spike.png',
   },
+  bevElements: {
+    name: 'Beverage Elements',
+    url: 'https://beveragelements.com/',
+    logo: 'bevElements.png',
+  },
 };
 
 export const mailingAddresses = [
@@ -464,6 +469,7 @@ export const sponsors = {
     companies.allAboutBeer,
     companies.spike,
     companies.bsg,
+    companies.bevElements,
   ]),
   gold: shuffle([
     companies.brewersFriend,
