@@ -407,6 +407,11 @@ const companies = {
     url: 'https://beveragelements.com/',
     logo: 'bevElements.png',
   },
+  adk: {
+    name: 'Adirondack Brewery',
+    url: 'http://adkbrewery.com/',
+    logo: 'adk.png',
+  },
 };
 
 export const mailingAddresses = [
@@ -470,6 +475,7 @@ export const sponsors = {
     companies.spike,
     companies.bsg,
     companies.bevElements,
+    companies.adk,
   ]),
   gold: shuffle([
     companies.brewersFriend,
