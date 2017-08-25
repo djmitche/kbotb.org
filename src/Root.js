@@ -42,13 +42,19 @@ export const Root = () => (
   <div className="root">
     <img className="centered-logo" src="img/kbotb-480.png" />
     <h1>21st Annual Homebrew Contest</h1>
+    { /*
     <h2>{contestDate.format('dddd, MMMM Do, YYYY')}</h2>
+
     <p><em>Want more bragging rights for your homebrew??</em></p>
     <p>What if you could tell your friends that your homebrew is "Award
     Winning"? Here is your opportunity to get your brew evaluated by
     BJCP certified judges.  Not only might you take home a prize, but
     all entries receive valuable written feedback from judges to help
     you improve your homebrew.</p>
+    */ }
+
+    <h3 style={{ tetAlign: 'center' }}>New for 2017:<br />After-party with Homebrew Samples, Hors d'Oeuvres,<br />Raffle & more!</h3>
+    <p style={{ textAlign: 'center' }}><Link to="/party">More Details</Link></p>
 
     <div id="page-menu">
       {resultsUrl && <div className="menu-item">
