@@ -451,6 +451,7 @@ export const sponsors = {
     companies.whiteLabs,
     companies.wyeast,
     companies.bells,
+    companies.theFactory,
   ]),
   silver: shuffle([
     companies.bitterAndEsters,
@@ -470,7 +471,6 @@ export const sponsors = {
     companies.argyle,
     companies.grogTag,
     companies.amoretti,
-    companies.theFactory,
     companies.allAboutBeer,
     companies.spike,
     companies.bsg,
