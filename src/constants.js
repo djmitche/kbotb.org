@@ -412,6 +412,26 @@ const companies = {
     url: 'http://adkbrewery.com/',
     logo: 'adk.png',
   },
+  hudson: {
+    name: 'Hudson Brewing',
+    url: 'https://www.hudsonbrew.com/',
+    logo: 'hudson.png',
+  },
+  madison: {
+    name: 'Madison Brewing Company.',
+    url: 'http://madisonbrewingco.com/',
+    logo: 'madison.png',
+  },
+  artisinal: {
+    name: 'Artisinal Brew Works',
+    url: 'https://artisanalbrewworks.com/',
+    logo: 'artisinal.png',
+  },
+  slyboro: {
+    name: 'Slyboro Cider House',
+    url: 'http://www.slyboro.com/',
+    logo: 'slyboro.png',
+  },
 };
 
 export const mailingAddresses = [
@@ -476,6 +496,9 @@ export const sponsors = {
     companies.bsg,
     companies.bevElements,
     companies.adk,
+    companies.hudson,
+    companies.artisinal,
+    companies.slyboro,
   ]),
   gold: shuffle([
     companies.brewersFriend,
@@ -486,6 +509,7 @@ export const sponsors = {
     companies.zymology,
     // specialty food groups (Jim Hume's sister in law)
     companies.shmaltz,
+    companies.madison,
   ]),
   platinum: shuffle([
     companies.parkManor,
