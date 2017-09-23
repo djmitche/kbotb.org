@@ -432,6 +432,26 @@ const companies = {
     url: 'http://www.slyboro.com/',
     logo: 'slyboro.png',
   },
+  madjack: {
+    name: 'Mad Jack Brewing Co',
+    url: 'http://www.vandycklounge.com/',
+    logo: 'madjack.png',
+  },
+  pinhead: {
+    name: 'Pinhead Susan\'s',
+    url: 'http://www.pinheadsusan.com/',
+    logo: 'pinhead.png',
+  },
+  stockade: {
+    name: 'The Stockade Inn',
+    url: 'https://stockadeinn.com/',
+    logo: 'stockade.png',
+  },
+  royalMeadery: {
+    name: 'Royal Meadery',
+    url: 'http://royalmeadery.com/',
+    logo: 'royalMeadery.png',
+  },
 };
 
 export const mailingAddresses = [
@@ -499,6 +519,10 @@ export const sponsors = {
     companies.hudson,
     companies.artisinal,
     companies.slyboro,
+    companies.madjack,
+    companies.pinhead,
+    companies.stockade,
+    companies.royalMeadery,
   ]),
   gold: shuffle([
     companies.brewersFriend,
