@@ -450,7 +450,7 @@ const companies = {
   royalMeadery: {
     name: 'Royal Meadery',
     url: 'http://royalmeadery.com/',
-    logo: 'royalMeadery.png',
+    logo: 'royalMeadery.jpg',
   },
 };
 
