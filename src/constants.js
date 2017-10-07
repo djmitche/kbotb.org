@@ -452,6 +452,11 @@ const companies = {
     url: 'http://royalmeadery.com/',
     logo: 'royalMeadery.jpg',
   },
+  byo: {
+    name: 'BYO',
+    url: 'https://byo.com/',
+    logo: 'byo.png',
+  },
 };
 
 export const mailingAddresses = [
@@ -523,6 +528,7 @@ export const sponsors = {
     companies.pinhead,
     companies.stockade,
     companies.royalMeadery,
+    companies.byo,
   ]),
   gold: shuffle([
     companies.brewersFriend,
