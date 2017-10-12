@@ -457,6 +457,11 @@ const companies = {
     url: 'https://byo.com/',
     logo: 'byo.png',
   },
+  commonRoots: {
+    name: 'Common Roots Brewing Company',
+    url: 'https://commonrootsbrewing.com/',
+    logo: 'common-roots.png',
+  },
 };
 
 export const mailingAddresses = [
@@ -526,6 +531,7 @@ export const sponsors = {
     companies.stockade,
     companies.royalMeadery,
     companies.byo,
+    companies.commonRoots,
   ]),
   gold: shuffle([
     companies.brewersFriend,
