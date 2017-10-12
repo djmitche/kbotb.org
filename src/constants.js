@@ -462,6 +462,16 @@ const companies = {
     url: 'https://commonrootsbrewing.com/',
     logo: 'common-roots.png',
   },
+  greatFlats: {
+    name: 'Great Flats Brewing',
+    url: 'https://www.greatflatsbrewing.com/',
+    logo: 'greatFlats.png',
+  },
+  wolfHollow: {
+    name: 'Wolf Hollow Brewing Co',
+    url: 'http://www.wolfhollowbrewing.com/',
+    logo: 'wolfHollow.png',
+  },
 };
 
 export const mailingAddresses = [
@@ -532,6 +542,8 @@ export const sponsors = {
     companies.royalMeadery,
     companies.byo,
     companies.commonRoots,
+    companies.greatFlats,
+    companies.wolfHollow,
   ]),
   gold: shuffle([
     companies.brewersFriend,
