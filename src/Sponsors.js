@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 import { sponsors } from './constants';
 
 const Sponsor = props => (
@@ -34,6 +35,8 @@ const Sponsors = () => (
     <div className="sponsor-list">
       {sponsors.bronze.map(spon => (<Sponsor key={spon.name} sponsor={spon} />))}
     </div>
+
+    <center><Link to="/sponsor-show">sponsor slide-show</Link></center>
   </div>
 );
 

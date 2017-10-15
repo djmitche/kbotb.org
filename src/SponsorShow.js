@@ -1,12 +1,13 @@
 import React from 'react';
-import { sponsors } from './constants';
+import { sponsors as allSponsors } from './constants';
 import './SponsorShow.css';
+import { CSSTransitionGroup } from 'react-transition-group';
 
 const Sponsor = props => {
-  const { sponsor, order, ...extra } = props;
+  const { sponsor, preload, ...extra } = props;
 
   return (
-    <div className={`sponsor carousel-${order}`} { ...extra }>
+    <div className={`sponsor ${preload ? 'preload' : ''}`} { ...extra }>
       <a href={sponsor.url}>
         <img className="sponsor-image" src={`logos/${sponsor.logo}`} />
       </a>
@@ -19,14 +20,13 @@ class SponsorCarousel extends React.Component {
   constructor() {
     super();
     this.state = {
-      prevIndex: 0,
       itemIndex: 0,
       nextIndex: 0,
     };
   }
 
   componentWillMount() {
-    this.timer = window.setInterval(() => this.advance(), 1000);
+    this.timer = window.setInterval(() => this.advance(), 5000);
     this.advance();
   }
 
@@ -42,7 +42,6 @@ class SponsorCarousel extends React.Component {
     const nextIndex = Math.floor(Math.random() * sponsors.length);
 
     this.setState({
-      prevIndex: this.state.itemIndex,
       itemIndex: this.state.nextIndex,
       nextIndex,
     });
@@ -52,9 +51,13 @@ class SponsorCarousel extends React.Component {
     const { sponsors } = this.props;
     return (
       <div className="carousel">
-        <Sponsor sponsor={sponsors[this.state.prevIndex]} order="prev" />
-        <Sponsor sponsor={sponsors[this.state.itemIndex]} order="current" />
-        <Sponsor sponsor={sponsors[this.state.nextIndex]} order="next" />
+        <CSSTransitionGroup
+          transitionName="carousel"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={500}>
+          <Sponsor key={this.state.itemIndex} sponsor={sponsors[this.state.itemIndex]} />
+        </CSSTransitionGroup>
+        <Sponsor sponsor={sponsors[this.state.nextIndex]} preload={true} />
       </div>
     );
   }
@@ -63,21 +66,21 @@ class SponsorCarousel extends React.Component {
 const SponsorShow = () => (
   <div className="container-fluid overlay">
     <SponsorCarousel sponsors={[]
-      .concat(sponsors.platinum)
-      .concat(sponsors.platinum)
-      .concat(sponsors.platinum)
-      .concat(sponsors.platinum)
-      .concat(sponsors.platinum)
-      .concat(sponsors.platinum)
-      .concat(sponsors.platinum)
-      .concat(sponsors.platinum)
-      .concat(sponsors.gold)
-      .concat(sponsors.gold)
-      .concat(sponsors.gold)
-      .concat(sponsors.gold)
-      .concat(sponsors.silver)
-      .concat(sponsors.silver)
-      .concat(sponsors.bronze)}>
+      .concat(allSponsors.platinum)
+      .concat(allSponsors.platinum)
+      .concat(allSponsors.platinum)
+      .concat(allSponsors.platinum)
+      .concat(allSponsors.platinum)
+      .concat(allSponsors.platinum)
+      .concat(allSponsors.platinum)
+      .concat(allSponsors.platinum)
+      .concat(allSponsors.gold)
+      .concat(allSponsors.gold)
+      .concat(allSponsors.gold)
+      .concat(allSponsors.gold)
+      .concat(allSponsors.silver)
+      .concat(allSponsors.silver)
+      .concat(allSponsors.bronze)}>
     </SponsorCarousel>
   </div>
 );

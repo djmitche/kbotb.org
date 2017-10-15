@@ -22,8 +22,7 @@
 .sponsor.carousel-current {
 }
 
-.sponsor.carousel-next {
-    /* next is just used to preload the image */
+.sponsor.preload {
     display: none;
 }
 
@@ -45,4 +44,22 @@
     right: 0;
 }
 
+.carousel-enter {
+    opacity: 0.01;
+    z-index: 1020;
+}
 
+.carousel-enter-active {
+    opacity: 1;
+    transition: opacity .5s ease-in;
+}
+
+.carousel-leave {
+    opacity: 1;
+    z-index: 1010;
+}
+
+.carousel-leave-active {
+    opacity: 0.01;
+    transition: opacity .3s ease-in;
+}
