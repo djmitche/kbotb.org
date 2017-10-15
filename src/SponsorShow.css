@@ -1,0 +1,48 @@
+.overlay {  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: white;
+}
+
+.carousel {
+    position: static;
+}
+
+.sponsor {
+}
+
+.sponsor.carousel-prev {
+    display: none;
+}
+
+.sponsor.carousel-current {
+}
+
+.sponsor.carousel-next {
+    /* next is just used to preload the image */
+    display: none;
+}
+
+.sponsor-image {
+    min-width: 480px;
+    max-width: 720px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.sponsor-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+

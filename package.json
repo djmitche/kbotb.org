@@ -19,6 +19,7 @@
   "dependencies": {
     "babel-polyfill": "^6.16.0",
     "bootstrap": "^3.3.7",
+    "lodash.flatten": "^4.4.0",
     "moment": "^2.18.0",
     "neutrino": "^3.0.0",
     "neutrino-preset-react": "^2.0.1",

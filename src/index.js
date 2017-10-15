@@ -6,6 +6,7 @@ import { Root } from './Root';
 import Container from './Container';
 import Entries from './Entries';
 import Sponsors from './Sponsors';
+import SponsorShow from './SponsorShow';
 import Judging from './Judging';
 import Reggie from './Reggie';
 import Party from './Party';
@@ -17,6 +18,7 @@ const App = () => (
       <IndexRoute components={{ body: Root }} />
       <Route path="entry-details" components={{ body: Entries }} />
       <Route path="sponsors" components={{ body: Sponsors }} />
+      <Route path="sponsor-show" components={{ body: SponsorShow }} />
       <Route path="judging-details" components={{ body: Judging }} />
       <Route path="reggie" components={{ body: Reggie }} />
       <Route path="party" components={{ body: Party }} />
