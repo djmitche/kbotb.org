@@ -53,8 +53,7 @@ export const Root = () => (
     you improve your homebrew.</p>
     */ }
 
-    <h3 style={{ tetAlign: 'center' }}>New for 2017:<br />After-party with Homebrew Samples, Hors d'Oeuvres,<br />Raffle & more!</h3>
-    <p style={{ textAlign: 'center' }}><Link to="/party">More Details</Link></p>
+    <h2 style={{ tetAlign: 'center' }}><span style={{ color: 'red' }}>NOTE</span>: Venue Has Changed - Meet us at Artisanal Brew Works</h2>
 
     <div id="page-menu">
       {resultsUrl && <div className="menu-item">
