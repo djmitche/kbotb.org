@@ -472,6 +472,11 @@ const companies = {
     url: 'http://www.wolfhollowbrewing.com/',
     logo: 'wolfHollow.png',
   },
+  saratogaWinery: {
+    name: 'Saratoga Winery',
+    url: 'http://www.thesaratogawinery.com/',
+    logo: 'saratogaWinery.png',
+  },
 };
 
 export const mailingAddresses = [
@@ -544,6 +549,7 @@ export const sponsors = {
     companies.commonRoots,
     companies.greatFlats,
     companies.wolfHollow,
+    companies.saratogaWinery,
   ]),
   gold: shuffle([
     companies.brewersFriend,
