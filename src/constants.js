@@ -515,7 +515,6 @@ export const sponsors = {
     companies.sierraNevada,
     companies.whiteLabs,
     companies.wyeast,
-    companies.bells,
     companies.theFactory,
   ]),
   silver: shuffle([
