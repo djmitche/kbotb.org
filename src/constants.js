@@ -477,6 +477,11 @@ const companies = {
     url: 'http://www.thesaratogawinery.com/',
     logo: 'saratogaWinery.png',
   },
+  rareForm: {
+    name: 'Rare Form Brewing',
+    url: 'http://www.thesaratogawinery.com/',
+    logo: 'rareform.png',
+  },
 };
 
 export const mailingAddresses = [
@@ -522,12 +527,10 @@ export const sponsors = {
     companies.ejWren,
     companies.barleyHopsAndGrapes,
     companies.battleHill,
-    companies.ninePin,
     companies.aih,
     companies.fiveStar,
     companies.hopsAndBarley,
     companies.mohawkTapRoom,
-    companies.dudaDiesel,
     companies.brewBag,
     companies.argyle,
     companies.grogTag,
@@ -538,7 +541,6 @@ export const sponsors = {
     companies.bevElements,
     companies.adk,
     companies.hudson,
-    companies.artisinal,
     companies.slyboro,
     companies.madjack,
     companies.pinhead,
@@ -549,6 +551,7 @@ export const sponsors = {
     companies.greatFlats,
     companies.wolfHollow,
     companies.saratogaWinery,
+    companies.rareForm,
   ]),
   gold: shuffle([
     companies.brewersFriend,
@@ -560,9 +563,11 @@ export const sponsors = {
     // specialty food groups (Jim Hume's sister in law)
     companies.shmaltz,
     companies.madison,
+    companies.dudaDiesel,
   ]),
   platinum: shuffle([
     companies.henryStreet,
+    companies.artisinal,
   ]),
 };
 
