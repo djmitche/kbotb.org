@@ -2,7 +2,7 @@ import React from 'react';
 import moment from 'moment';
 
 /* set this to show the results */
-export const resultsUrl = null; // = 'http://www.reggiebeer.com/?Web=1000234';
+export const resultsUrl = 'https://reggiebeer.com/?Web=1000234';
 export const registrationUrl = 'http://reggiebeer.com/ReggieEntry.php?CompetitionID=UCXSVE1000234';
 export const partyUrl = 'http://www.brownpapertickets.com/event/3051779';
 
